@@ -1,0 +1,36 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {LEARNING_KEY,loadLearning,saveLearning,restoreLearning,originalContent} from '../dist/learning.js';
+import {STORAGE_KEY,saveProgress,loadProgress} from '../dist/progress.js';
+const data=JSON.parse(readFileSync(new URL('../dist/data.json',import.meta.url),'utf8'));
+const ids=new Set(data.questions.map(q=>q.id)),values=new Map();
+const storage={getItem:key=>values.get(key)??null,setItem:(key,value)=>values.set(key,value)};
+saveProgress(storage,ids,'q001','drafts','내가 쓴 답안');
+saveProgress(storage,ids,'q001','assessments','uncertain');
+const oldProgress=values.get(STORAGE_KEY);
+saveLearning(storage,ids,'q001',{answerText:'나에게 맞는 답안',tipText:'내 암기 방법'});
+saveLearning(storage,ids,'q002',{answerText:'다른 문항의 수정',tipText:''});
+assert.deepEqual(loadLearning(storage,ids).overrides.q001,{answerText:'나에게 맞는 답안',tipText:'내 암기 방법'});
+assert.equal(loadLearning(storage,ids).overrides.q002.tipText,'','An empty tip intentionally removes the original tip.');
+restoreLearning(storage,ids,'q001');
+assert.equal(loadLearning(storage,ids).overrides.q001,undefined);
+assert.equal(loadLearning(storage,ids).overrides.q002.answerText,'다른 문항의 수정');
+assert.equal(values.get(STORAGE_KEY),oldProgress,'Editing and restoration must preserve drafts and memory ratings exactly.');
+assert.equal(loadProgress(storage,ids).assessments.q001,'uncertain');
+const grouped=data.questions.find(q=>q.answerGroups),groupedText=originalContent(grouped).answerText;
+for(const g of grouped.answerGroups){assert.ok(groupedText.includes(`${g.label} · ${g.requiredCount}가지 선택`));for(const a of g.answers)assert.ok(groupedText.includes(a));}
+for(const q of data.questions){const content=originalContent(q);assert.ok(content.answerText.trim());assert.equal(content.tipText,q.memoryTip||'');}
+assert.equal(data.questions.filter(q=>q.memoryTip).length,21);
+assert.equal(data.questions.length,135);assert.equal(data.review.length,28);assert.equal(data.excluded.length,7);
+assert.throws(()=>saveLearning(storage,ids,'missing',{answerText:'x',tipText:''}));
+assert.throws(()=>saveLearning(storage,ids,'q001',{answerText:'  ',tipText:''}));
+assert.throws(()=>saveLearning(storage,ids,'q001',{answerText:'x'.repeat(50001),tipText:''}));
+assert.throws(()=>saveLearning(storage,ids,'q001',{answerText:'x',tipText:'x'.repeat(10001)}));
+values.set(LEARNING_KEY,'{bad');const corrupt=values.get(LEARNING_KEY);
+assert.throws(()=>saveLearning(storage,ids,'q001',{answerText:'x',tipText:''}));
+assert.throws(()=>restoreLearning(storage,ids,'q001'));assert.equal(values.get(LEARNING_KEY),corrupt);
+assert.throws(()=>loadLearning({getItem(){throw new Error('blocked');}},ids));
+values.delete(LEARNING_KEY);
+assert.throws(()=>saveLearning({...storage,setItem(){throw new Error('quota');}},ids,'q001',{answerText:'x',tipText:''}));
+assert.equal(values.get(LEARNING_KEY),undefined);
+console.log('PASS: answer and tip persistence, empty tips, per-question restore, unchanged drafts/ratings, grouped originals, validation and storage failures.');

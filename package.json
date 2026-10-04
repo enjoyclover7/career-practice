@@ -1,0 +1,1 @@
+{"name":"career-practice","private":true,"type":"module","scripts":{"build":"node scripts/build.mjs","test":"node --test src/*.test.mjs"},"dependencies":{"@supabase/supabase-js":"2.117.2"},"devDependencies":{"esbuild":"0.25.12"}}

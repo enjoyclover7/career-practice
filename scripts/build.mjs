@@ -1,0 +1,10 @@
+import {build} from 'esbuild';
+import {fileURLToPath} from 'node:url';
+import {readFile,writeFile,readdir} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+process.chdir(fileURLToPath(new URL('../',import.meta.url)));
+await build({absWorkingDir:fileURLToPath(new URL('../',import.meta.url)),entryPoints:['src/cloud.js'],bundle:true,format:'esm',platform:'browser',target:['es2022'],minify:true,outfile:'dist/cloud.js'});
+const hash=createHash('sha256');
+for(const name of (await readdir('dist')).sort())if(name!=='sw.js'&&name!=='icons')hash.update(await readFile(`dist/${name}`));
+const worker=await readFile('dist/sw.js','utf8');
+await writeFile('dist/sw.js',worker.replace(/const CACHE='career-practice[^']*'/,`const CACHE='career-practice-${hash.digest('hex').slice(0,12)}'`));

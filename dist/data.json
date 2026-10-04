@@ -1,0 +1,2674 @@
+{
+  "questions": [
+    {
+      "id": "q001",
+      "number": 1,
+      "lecture": 1,
+      "sourceNumber": 1,
+      "category": "상담이론",
+      "prompt": "프로이트가 제시한 불안의 세 가지 유형을 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "현실적 불안: 외부의 실제 위험을 자아가 지각하여 느끼는 불안이다.",
+        "신경증적 불안: 본능의 충동을 자아가 통제하지 못할 것이라는 두려움에서 생긴다.",
+        "도덕적 불안: 초자아의 양심과 도덕적 기준을 어길 때 생기는 죄책감과 불안이다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=os9iZZdxmL0"
+    },
+    {
+      "lecture": 1,
+      "sourceNumber": 2,
+      "category": "상담이론",
+      "prompt": "방어기제 다섯 가지를 쓰고 각각의 의미와 예를 설명하시오.",
+      "expectedCount": 5,
+      "answers": [
+        "억압: 고통스러운 기억이나 충동을 무의식으로 밀어낸다. 충격적인 경험을 기억하지 못하는 경우이다.",
+        "투사: 자신의 받아들이기 어려운 감정이나 욕구를 다른 사람의 것으로 돌린다. 자신의 미움을 상대가 자신을 미워한다고 생각하는 경우이다.",
+        "합리화: 실제 이유 대신 그럴듯한 이유로 행동을 정당화한다. 얻지 못한 것을 원래 가치 없는 것이라고 말하는 경우이다.",
+        "퇴행: 어려움에 처했을 때 이전 발달 단계의 행동으로 돌아간다. 동생이 태어난 뒤 어린아이가 다시 어리광을 부리는 경우이다.",
+        "전위: 감정을 원래 대상 대신 다른 대상에게 표현한다. 직장에서 받은 화를 가족에게 푸는 경우이다."
+      ],
+      "answerSelectionNote": "아래 5가지 답안을 작성하세요.",
+      "sourceUrl": "https://www.youtube.com/watch?v=os9iZZdxmL0",
+      "number": 2,
+      "id": "q118"
+    },
+    {
+      "id": "q002",
+      "number": 3,
+      "lecture": 1,
+      "sourceNumber": 3,
+      "category": "상담이론",
+      "prompt": "로저스의 내담자 중심 상담에서 상담자의 태도 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "일치성 또는 진솔성: 상담자는 자신의 경험과 감정을 솔직하고 일관되게 드러낸다.",
+        "무조건적 긍정적 존중: 내담자를 조건 없이 가치 있는 존재로 존중하고 수용한다.",
+        "공감적 이해: 내담자의 입장에서 감정과 경험을 이해하되 상담자의 객관성을 유지한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=os9iZZdxmL0"
+    },
+    {
+      "id": "q003",
+      "number": 4,
+      "lecture": 1,
+      "sourceNumber": 4,
+      "category": "상담이론",
+      "prompt": "로저스가 제시한 충분히 기능하는 사람의 특성 다섯 가지를 쓰시오.",
+      "expectedCount": 5,
+      "answers": [
+        "경험에 대한 개방성: 자신의 경험과 감정을 방어하지 않고 받아들인다.",
+        "실존적인 삶: 현재의 순간을 충실하게 살아간다.",
+        "유기체에 대한 신뢰: 자신의 경험과 판단을 신뢰한다.",
+        "자유: 선택의 자유와 그에 대한 책임을 경험한다.",
+        "창조성: 환경에 유연하게 적응하고 새로운 방식으로 살아간다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=os9iZZdxmL0",
+      "memoryTip": "개·창·자·실·신\n개방성 → 창조성 → 자유 → 실존적인 삶 → 유기체에 대한 신뢰.\n충분히 기능하는 사람의 특징을 첫 글자로 떠올려 보세요."
+    },
+    {
+      "id": "q004",
+      "number": 5,
+      "lecture": 1,
+      "sourceNumber": 5,
+      "category": "상담이론",
+      "prompt": "아들러의 개인심리학 상담 목표 다섯 가지를 쓰시오.",
+      "expectedCount": 5,
+      "answers": [
+        "열등감의 극복",
+        "우월성의 추구",
+        "사회적 관심의 증진",
+        "잘못된 동기의 수정",
+        "개인의 역동성 탐색과 추구"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=os9iZZdxmL0"
+    },
+    {
+      "id": "q005",
+      "number": 6,
+      "lecture": 1,
+      "sourceNumber": 6,
+      "category": "상담이론",
+      "prompt": "아들러의 생활양식 네 가지를 쓰고 설명하시오.",
+      "expectedCount": 4,
+      "answers": [
+        "지배형: 활동 수준은 높지만 사회적 관심이 낮아 타인을 지배하려 한다.",
+        "기생형: 활동 수준과 사회적 관심이 낮으며 타인에게 의존한다.",
+        "회피형: 활동 수준과 사회적 관심이 낮고 실패를 피하려 문제를 회피한다.",
+        "사회적 유용형: 활동 수준과 사회적 관심이 높아 타인과 협력하며 문제를 해결한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=os9iZZdxmL0",
+      "memoryTip": "지·기·도·사\n지배형 · 기생형 · 도피형(회피형) · 사회적 유용형.\n강의에서는 회피형을 도피형이라고도 부르며 “지기도사”로 기억합니다."
+    },
+    {
+      "id": "q006",
+      "number": 7,
+      "lecture": 1,
+      "sourceNumber": 7,
+      "category": "직업상담",
+      "prompt": "패터슨이 제시한 직업정보 제공 원칙 네 가지를 쓰시오.",
+      "expectedCount": 4,
+      "answers": [
+        "상담자가 먼저 직업정보를 제공하기보다 내담자의 필요와 요구를 확인한다.",
+        "내담자가 정보를 원하면 정보의 출처를 알려 주고 스스로 탐색하도록 돕는다.",
+        "상담자가 정보를 조작하거나 평가하여 내담자의 선택을 유도하지 않는다.",
+        "정보에 대한 내담자의 태도와 감정을 자유롭게 표현하도록 돕는다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=os9iZZdxmL0"
+    },
+    {
+      "id": "q007",
+      "number": 8,
+      "lecture": 1,
+      "sourceNumber": 8,
+      "category": "상담이론",
+      "prompt": "특성요인 상담과 내담자 중심 상담의 차이점을 세 가지 쓰시오.",
+      "expectedCount": 3,
+      "answers": [
+        "상담의 중심: 특성요인 상담은 상담자 중심, 내담자 중심 상담은 내담자 중심이다.",
+        "상담 방법: 특성요인 상담은 지시적 접근, 내담자 중심 상담은 비지시적 접근이다.",
+        "심리검사의 활용: 특성요인 상담은 검사를 중요하게 활용하며, 내담자 중심 상담은 검사를 필수적인 수단으로 보지 않는다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=os9iZZdxmL0"
+    },
+    {
+      "id": "q008",
+      "number": 9,
+      "lecture": 1,
+      "sourceNumber": 9,
+      "category": "직업상담",
+      "prompt": "윌리엄슨의 직업선택 문제 유형 네 가지를 쓰시오.",
+      "expectedCount": 4,
+      "answers": [
+        "직업 무선택: 아직 직업을 선택하지 못한 상태이다.",
+        "불확실한 선택: 직업을 선택했으나 확신이 부족하다.",
+        "어리석은 선택: 자신의 특성이나 직업의 요구와 맞지 않는 선택이다.",
+        "흥미와 적성의 불일치: 원하는 직업과 수행 능력이 일치하지 않는다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=os9iZZdxmL0"
+    },
+    {
+      "id": "q009",
+      "number": 10,
+      "lecture": 1,
+      "sourceNumber": 10,
+      "category": "직업상담",
+      "prompt": "달리가 제시한 직업정보 제공 원칙 네 가지를 쓰시오.",
+      "expectedCount": 4,
+      "answers": [
+        "상담자가 과장되거나 권위적인 태도를 취하지 않는다.",
+        "내담자가 이해할 수 있도록 적은 양의 정보를 제공한다.",
+        "정보 제공 전에 내담자가 실제로 그 정보를 원하는지 확인한다.",
+        "정보를 제공하면서 내담자의 태도와 반응을 살핀다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=os9iZZdxmL0"
+    },
+    {
+      "id": "q010",
+      "number": 11,
+      "lecture": 1,
+      "sourceNumber": 11,
+      "category": "직업상담",
+      "prompt": "보딘의 심리적 직업문제 유형 다섯 가지를 쓰고 설명하시오.",
+      "expectedCount": 5,
+      "answers": [
+        "의존성: 자신의 문제를 타인에게 의존하여 해결하려 한다.",
+        "정보의 부족: 직업선택에 필요한 정보가 부족하다.",
+        "자아갈등: 자신의 욕구나 가치 사이의 갈등으로 선택이 어렵다.",
+        "선택에 대한 불안: 선택하기 전에 실패나 결과를 두려워한다.",
+        "확신의 결여: 이미 선택한 직업에 대한 확신이 부족하다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=os9iZZdxmL0"
+    },
+    {
+      "id": "q011",
+      "number": 12,
+      "lecture": 1,
+      "sourceNumber": 12,
+      "category": "상담이론",
+      "prompt": "역전이의 의미와 대처 방법을 설명하시오.",
+      "expectedCount": 0,
+      "answers": [
+        "의미: 상담자가 자신의 과거 경험이나 감정을 내담자에게 투사하여 반응하는 현상이다.",
+        "자기분석: 자신의 감정과 반응의 원인을 알아차리고 점검한다.",
+        "슈퍼비전: 지도·감독을 통해 상담관계와 반응을 검토한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=os9iZZdxmL0"
+    },
+    {
+      "id": "q012",
+      "number": 13,
+      "lecture": 1,
+      "sourceNumber": 15,
+      "category": "상담이론",
+      "prompt": "엘리스의 합리적 정서행동치료에서 비합리적 신념의 당위성 세 가지를 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "자신에 대한 당위성: 나는 반드시 성공하고 인정받아야 한다고 믿는다.",
+        "타인에 대한 당위성: 타인은 반드시 나를 친절하고 공정하게 대해야 한다고 믿는다.",
+        "세상에 대한 당위성: 세상은 반드시 공정하고 내가 원하는 대로 되어야 한다고 믿는다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=os9iZZdxmL0"
+    },
+    {
+      "lecture": 2,
+      "sourceNumber": 17,
+      "category": "상담이론",
+      "prompt": "인지적 오류 네 가지를 쓰고 설명하시오.",
+      "expectedCount": 4,
+      "answers": [
+        "흑백논리: 중간을 인정하지 않고 성공 또는 실패처럼 양극단으로 판단한다.",
+        "과잉일반화: 한 번의 경험을 모든 상황에 적용한다.",
+        "개인화: 자신과 관계없는 사건을 자신의 탓으로 받아들인다.",
+        "선택적 추상화: 전체 맥락을 무시하고 일부 부정적인 정보에만 집중한다.",
+        "자의적 해석: 충분한 근거 없이 임의로 결론을 내린다."
+      ],
+      "answerSelectionNote": "아래 5가지 예시 중 4가지를 작성하세요.",
+      "sourceUrl": "https://www.youtube.com/watch?v=vk-JtD-vTk8",
+      "number": 14,
+      "id": "q119",
+      "memoryTip": "흑·과·개·선\n흑백논리 · 과잉일반화 · 개인화 · 선택적 추상화.\n“흑과개선”으로 네 가지 인지적 오류를 떠올려 보세요. 답안에 있는 자의적 해석도 선택할 수 있습니다."
+    },
+    {
+      "id": "q013",
+      "number": 15,
+      "lecture": 2,
+      "sourceNumber": 18,
+      "category": "직업상담",
+      "prompt": "인지적 명확성이 부족하게 되는 원인 다섯 가지를 쓰시오.",
+      "expectedCount": 5,
+      "answers": [
+        "정보의 결핍",
+        "고정관념",
+        "경미한 정신건강 문제",
+        "심각한 정신건강 문제",
+        "외적 요인"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=vk-JtD-vTk8"
+    },
+    {
+      "id": "q014",
+      "number": 16,
+      "lecture": 2,
+      "sourceNumber": 20,
+      "category": "상담이론",
+      "prompt": "체계적 둔감화의 의미와 세 단계를 순서대로 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "이완훈련: 불안과 양립하기 어려운 이완 반응을 익힌다.",
+        "불안위계 작성: 불안 상황을 약한 것부터 강한 것까지 배열한다.",
+        "점진적 노출: 이완 상태에서 약한 불안 상황부터 단계적으로 경험한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=vk-JtD-vTk8",
+      "answerIntro": "불안과 양립하기 어려운 이완 반응을 이용하여 불안을 단계적으로 줄이는 행동치료 기법이다."
+    },
+    {
+      "lecture": 2,
+      "sourceNumber": 21,
+      "category": "직업상담기법",
+      "prompt": "행동주의 직업상담의 내적 행동변화 기법과 외적 행동변화 기법을 각각 세 가지 쓰시오.",
+      "expectedCount": 6,
+      "answerGroups": [
+        {
+          "label": "내적 행동변화 기법",
+          "requiredCount": 3,
+          "answers": [
+            "체계적 둔감화",
+            "인지적 모델링",
+            "인지적 재구조화",
+            "사고정지"
+          ]
+        },
+        {
+          "label": "외적 행동변화 기법",
+          "requiredCount": 3,
+          "answers": [
+            "모델링",
+            "역할연기",
+            "토큰법(상표제도)",
+            "주장훈련"
+          ]
+        }
+      ],
+      "answers": [
+        "체계적 둔감화",
+        "인지적 모델링",
+        "인지적 재구조화",
+        "사고정지",
+        "모델링",
+        "역할연기",
+        "토큰법(상표제도)",
+        "주장훈련"
+      ],
+      "requirementLabel": "각 3가지",
+      "answerSelectionNote": "각 범주에서 3가지씩 선택하여 작성하세요.",
+      "sourceUrl": "https://www.youtube.com/watch?v=vk-JtD-vTk8",
+      "number": 17,
+      "id": "q120"
+    },
+    {
+      "id": "q015",
+      "number": 18,
+      "lecture": 2,
+      "sourceNumber": 22,
+      "category": "상담이론",
+      "prompt": "특성요인 상담의 기본 가정 세 가지를 쓰시오.",
+      "expectedCount": 3,
+      "answers": [
+        "개인은 신뢰롭고 타당하게 측정할 수 있는 특성을 지닌다.",
+        "개인의 특성과 직업의 요구를 연결하면 적합한 직업선택을 도울 수 있다.",
+        "개인의 직업문제 해결에는 전문가의 정보와 조력이 필요할 수 있다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=vk-JtD-vTk8"
+    },
+    {
+      "id": "q016",
+      "number": 19,
+      "lecture": 2,
+      "sourceNumber": 23,
+      "category": "상담이론",
+      "prompt": "교류분석 상담의 분석 유형 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "구조분석: 부모·성인·아동 자아상태를 분석한다.",
+        "교류분석: 자아상태 사이의 상보·교차·이면 교류를 분석한다.",
+        "생활양식 분석: 자신과 타인에 대한 긍정·부정의 생활자세를 분석한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=vk-JtD-vTk8"
+    },
+    {
+      "id": "q017",
+      "number": 20,
+      "lecture": 2,
+      "sourceNumber": 24,
+      "category": "직업상담",
+      "prompt": "크라이티스의 포괄적 직업상담 세 단계를 순서대로 쓰시오.",
+      "expectedCount": 3,
+      "answers": [
+        "진단: 내담자의 문제와 특성을 파악한다.",
+        "명료화: 문제와 선택에 관한 인식을 분명하게 한다.",
+        "문제해결: 대안과 계획을 마련하고 문제를 해결한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=vk-JtD-vTk8"
+    },
+    {
+      "id": "q018",
+      "number": 21,
+      "lecture": 2,
+      "sourceNumber": 25,
+      "category": "직업상담",
+      "prompt": "부처의 집단 직업상담 세 단계를 순서대로 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "탐색: 자기개방, 흥미와 적성 탐색, 피드백을 통해 자신을 이해한다.",
+        "전환: 자기인식을 직업세계와 연결하고 가치와 선택의 불일치를 다룬다.",
+        "행동: 직업을 결정하고 행동계획을 수립하여 실행한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=vk-JtD-vTk8",
+      "memoryTip": "탐·전·행\n탐색 → 전환 → 행동.\n집단 직업상담의 세 단계는 이 순서로 기억하세요."
+    },
+    {
+      "id": "q019",
+      "number": 22,
+      "lecture": 2,
+      "sourceNumber": 26,
+      "category": "직업상담",
+      "prompt": "톨버트가 제시한 집단 직업상담 활동 다섯 가지를 쓰시오.",
+      "expectedCount": 5,
+      "answers": [
+        "자기탐색",
+        "상호작용",
+        "개인정보의 검토",
+        "직업정보의 검토",
+        "의사결정"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=vk-JtD-vTk8"
+    },
+    {
+      "id": "q020",
+      "number": 23,
+      "lecture": 2,
+      "sourceNumber": 27,
+      "category": "직업상담",
+      "prompt": "코틀의 시간 전망 개입 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "방향성: 미래에 대한 낙관적인 전망과 방향을 갖도록 돕는다.",
+        "변별성: 과거·현재·미래를 구별하고 목표를 분명히 하도록 돕는다.",
+        "통합성: 현재의 행동을 미래의 결과와 연결하도록 돕는다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=vk-JtD-vTk8"
+    },
+    {
+      "id": "q021",
+      "number": 24,
+      "lecture": 2,
+      "sourceNumber": 28,
+      "category": "직업상담",
+      "prompt": "코틀의 원형검사에서 원의 의미·크기·배치가 나타내는 것을 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "원의 의미: 각각의 원은 과거·현재·미래를 나타낸다.",
+        "원의 크기: 각 시간에 대한 상대적인 중요성과 친밀감을 나타낸다.",
+        "원의 배치: 떨어짐·접촉·겹침을 통해 시간 사이의 연관성과 통합 정도를 나타낸다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=vk-JtD-vTk8"
+    },
+    {
+      "id": "q022",
+      "number": 25,
+      "lecture": 3,
+      "sourceNumber": 31,
+      "category": "직업상담",
+      "prompt": "내담자가 정보를 전달할 때 나타나는 오류 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "정보의 오류: 정보를 삭제하거나 불분명하게 전달한다.",
+        "한계의 오류: 예외나 가능성을 인정하지 않고 자신의 경험만으로 한계를 정한다.",
+        "논리적 오류: 생각이나 결론 사이의 논리적 관계가 맞지 않는다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=OvJcVDq3BmI",
+      "memoryTip": "정·한·논\n정보의 오류 · 한계의 오류 · 논리적 오류.\n내담자의 정보와 행동을 이해할 때 확인할 세 가지 오류입니다."
+    },
+    {
+      "id": "q023",
+      "number": 26,
+      "lecture": 3,
+      "sourceNumber": 33,
+      "category": "직업상담",
+      "prompt": "수퍼의 발달적 직업상담 여섯 단계를 순서대로 쓰시오.",
+      "expectedCount": 6,
+      "answers": [
+        "문제의 탐색",
+        "심층적 탐색",
+        "자아개념의 묘사와 통찰",
+        "현실검증",
+        "태도와 감정의 탐색 및 처리",
+        "의사결정"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=OvJcVDq3BmI",
+      "memoryTip": "문·심·자·현·태·의\n문제 탐색 → 심층 탐색 → 자아개념 묘사와 통찰 → 현실 검증 → 태도와 감정의 탐색 및 처리 → 의사결정.\n여섯 단계의 앞부분을 연결해 순서를 떠올려 보세요."
+    },
+    {
+      "id": "q024",
+      "number": 27,
+      "lecture": 3,
+      "sourceNumber": 34,
+      "category": "직업상담",
+      "prompt": "흥미 사정의 목적 세 가지를 쓰시오.",
+      "expectedCount": 3,
+      "answers": [
+        "자기인식의 발전",
+        "직업대안의 규명",
+        "직업과 여가·취미의 구별"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=OvJcVDq3BmI"
+    },
+    {
+      "id": "q025",
+      "number": 28,
+      "lecture": 3,
+      "sourceNumber": 35,
+      "category": "직업상담",
+      "prompt": "가치 사정의 목적 세 가지를 쓰시오.",
+      "expectedCount": 3,
+      "answers": [
+        "자기인식의 발전",
+        "역할갈등의 근거 확인",
+        "현재 직업이나 상황에 대한 불만족의 근거 확인"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=OvJcVDq3BmI"
+    },
+    {
+      "id": "q026",
+      "number": 29,
+      "lecture": 3,
+      "sourceNumber": 36,
+      "category": "직업상담",
+      "prompt": "역할관계 사정 기법 세 가지를 쓰시오.",
+      "expectedCount": 3,
+      "answers": [
+        "질문을 통한 사정",
+        "동그라미로 역할관계를 그리는 방법",
+        "생애계획 연습을 통한 전환"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=OvJcVDq3BmI"
+    },
+    {
+      "id": "q027",
+      "number": 30,
+      "lecture": 3,
+      "sourceNumber": 38,
+      "category": "직업상담",
+      "prompt": "파슨스의 특성요인 직업선택 세 요소를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "자기분석: 자신의 흥미, 적성, 능력과 특성을 이해한다.",
+        "직업분석: 직업의 요구조건, 기회와 정보를 이해한다.",
+        "합리적 연결: 자기분석과 직업분석을 과학적·합리적으로 연결한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=OvJcVDq3BmI"
+    },
+    {
+      "id": "q028",
+      "number": 31,
+      "lecture": 3,
+      "sourceNumber": 39,
+      "category": "진로이론",
+      "prompt": "긴즈버그의 현실기 세 단계를 순서대로 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "탐색: 직업의 대안과 기회를 탐색한다.",
+        "구체화: 직업선택의 방향을 구체화한다.",
+        "특수화: 구체적인 직업을 선택하고 준비한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=OvJcVDq3BmI"
+    },
+    {
+      "id": "q029",
+      "number": 32,
+      "lecture": 3,
+      "sourceNumber": 40,
+      "category": "진로이론",
+      "prompt": "로의 욕구이론에 영향을 준 이론과 직업분류의 두 차원을 설명하시오.",
+      "expectedCount": 0,
+      "answers": [
+        "영향을 준 이론: 매슬로의 욕구위계이론이다.",
+        "흥미의 차원: 직업을 여덟 개의 군으로 분류한다.",
+        "책임과 난이도의 차원: 직업을 여섯 개의 수준으로 분류한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=OvJcVDq3BmI",
+      "memoryTip": "로 → 매슬로\n로의 욕구이론은 매슬로의 욕구위계이론과 연결해 기억하세요.\n직업 분류의 내용은 모범답안에서 따로 확인하세요."
+    },
+    {
+      "id": "q030",
+      "number": 33,
+      "lecture": 3,
+      "sourceNumber": 41,
+      "category": "진로이론",
+      "prompt": "크럼볼츠의 사회학습이론에서 진로선택에 영향을 주는 요인 네 가지를 쓰시오.",
+      "expectedCount": 4,
+      "answers": [
+        "유전적 요인과 특별한 능력",
+        "환경조건과 사건",
+        "학습경험",
+        "과제접근기술"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=OvJcVDq3BmI",
+      "memoryTip": "유·환·학·과\n유전적 요인과 특별한 능력 · 환경조건과 사건 · 학습경험 · 과제접근기술.\n크롬볼츠 이론의 네 가지 요인을 연결해 기억하세요."
+    },
+    {
+      "id": "q031",
+      "number": 34,
+      "lecture": 3,
+      "sourceNumber": 42,
+      "category": "심리검사",
+      "prompt": "스트롱 직업흥미검사의 척도 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "일반직업분류(GOT): 홀랜드의 여섯 가지 유형에 따라 전반적인 흥미를 파악한다.",
+        "기본흥미척도(BIS): 보다 구체적인 활동과 주제에 대한 흥미를 파악한다.",
+        "개인특성척도(PSS): 일과 학습, 리더십 등 개인이 선호하는 방식을 파악한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=OvJcVDq3BmI"
+    },
+    {
+      "id": "q032",
+      "number": 35,
+      "lecture": 3,
+      "sourceNumber": 43,
+      "category": "상담이론",
+      "prompt": "라자루스의 다중양식치료에서 BASIC ID의 일곱 요소를 쓰시오.",
+      "expectedCount": 7,
+      "answers": [
+        "행동(Behavior)",
+        "정서(Affect)",
+        "감각(Sensation)",
+        "심상(Imagery)",
+        "인지(Cognition)",
+        "대인관계(Interpersonal relationships)",
+        "약물·생물학적 요인(Drugs/Biology)"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=OvJcVDq3BmI",
+      "memoryTip": "BASIC ID\nB 행동 · A 정서 · S 감각 · I 심상 · C 인지 · I 대인관계 · D 약물 및 생물학적 요인.\n“베이직 아이디”의 각 글자에 일곱 영역을 연결하세요."
+    },
+    {
+      "id": "q033",
+      "number": 36,
+      "lecture": 3,
+      "sourceNumber": 44,
+      "category": "직업심리",
+      "prompt": "조직에서 발생하는 직무 스트레스 요인 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "과제의 특성: 업무의 난이도, 업무량과 작업 특성에서 발생한다.",
+        "역할갈등: 서로 양립하기 어려운 역할의 요구에서 발생한다.",
+        "역할모호성: 자신의 역할, 책임과 기대가 분명하지 않아 발생한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=OvJcVDq3BmI"
+    },
+    {
+      "id": "q034",
+      "number": 37,
+      "lecture": 4,
+      "sourceNumber": 46,
+      "category": "심리검사",
+      "prompt": "수퍼가 제시한 흥미의 유형 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "표현된 흥미: 말이나 자기보고를 통해 드러난 흥미이다.",
+        "조작된 흥미: 행동이나 활동에 대한 관찰을 통해 드러난 흥미이다.",
+        "조사된 흥미: 표준화된 흥미검사를 통해 측정한 흥미이다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=Q7nMOxAMcP4"
+    },
+    {
+      "id": "q035",
+      "number": 38,
+      "lecture": 4,
+      "sourceNumber": 47,
+      "category": "직업상담",
+      "prompt": "흥미를 사정하는 방법 세 가지를 쓰시오.",
+      "expectedCount": 3,
+      "answers": [
+        "작업경험의 분석",
+        "직업카드 분류법",
+        "흥미검사의 실시"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=Q7nMOxAMcP4"
+    },
+    {
+      "id": "q036",
+      "number": 39,
+      "lecture": 4,
+      "sourceNumber": 48,
+      "category": "심리검사",
+      "prompt": "틴슬리와 브래들리의 검사결과 해석 네 단계를 순서대로 쓰시오.",
+      "expectedCount": 4,
+      "answers": [
+        "해석을 위한 준비",
+        "내담자의 수용 준비",
+        "정보의 전달",
+        "추후활동"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=Q7nMOxAMcP4"
+    },
+    {
+      "id": "q037",
+      "number": 40,
+      "lecture": 4,
+      "sourceNumber": 49,
+      "category": "심리검사",
+      "prompt": "심리검사의 신뢰도에 영향을 미치는 요인 다섯 가지를 쓰시오.",
+      "expectedCount": 5,
+      "answers": [
+        "개인차",
+        "문항 수",
+        "문항의 반응 수",
+        "검사의 유형",
+        "문항의 난이도"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=Q7nMOxAMcP4"
+    },
+    {
+      "lecture": 4,
+      "sourceNumber": 50,
+      "category": "직업심리검사",
+      "prompt": "검사·재검사 신뢰도에 영향을 미치는 요인을 세 가지 쓰시오.",
+      "expectedCount": 3,
+      "answers": [
+        "기억요인: 첫 검사에서 접한 문항이나 답을 기억하여 재검사 결과에 영향을 준다.",
+        "성숙요인: 두 검사 사이에 수검자가 성장하거나 발달한다.",
+        "역사요인: 두 검사 사이에 발생한 사건이나 경험이 결과에 영향을 준다.",
+        "동기요인: 검사에 임하는 동기와 태도가 달라진다.",
+        "환경요인: 검사 장소와 실시 환경의 차이가 결과에 영향을 준다."
+      ],
+      "answerSelectionNote": "아래 5가지 예시 중 3가지를 작성하세요.",
+      "sourceUrl": "https://www.youtube.com/watch?v=Q7nMOxAMcP4",
+      "number": 41,
+      "id": "q121"
+    },
+    {
+      "id": "q038",
+      "number": 42,
+      "lecture": 4,
+      "sourceNumber": 51,
+      "category": "심리검사",
+      "prompt": "측정척도의 네 가지 유형을 쓰고 설명하시오.",
+      "expectedCount": 4,
+      "answers": [
+        "명명척도: 대상을 범주로 분류하며 크기나 순서를 나타내지 않는다.",
+        "서열척도: 대상 사이의 순서를 나타내며 간격은 일정하지 않다.",
+        "등간척도: 간격이 일정하지만 절대적인 영점은 없다.",
+        "비율척도: 간격이 일정하고 절대적인 영점이 있어 비율 비교가 가능하다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=Q7nMOxAMcP4"
+    },
+    {
+      "id": "q039",
+      "number": 43,
+      "lecture": 4,
+      "sourceNumber": 53,
+      "category": "진로이론",
+      "prompt": "고트프레드슨의 직업포부 발달 네 단계를 순서대로 쓰시오.",
+      "expectedCount": 4,
+      "answers": [
+        "힘과 크기에 대한 지향성: 대략 3~5세.",
+        "성역할에 대한 지향성: 대략 6~8세.",
+        "사회적 가치에 대한 지향성: 대략 9~13세.",
+        "내적·고유한 자아에 대한 지향성: 대략 14세 이후."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=Q7nMOxAMcP4"
+    },
+    {
+      "id": "q040",
+      "number": 44,
+      "lecture": 4,
+      "sourceNumber": 54,
+      "category": "진로이론",
+      "prompt": "홀랜드의 성격유형 여섯 가지를 쓰고 설명하시오.",
+      "expectedCount": 6,
+      "answers": [
+        "현실형(R): 도구, 기계와 실물 활동을 선호한다.",
+        "탐구형(I): 분석, 탐구와 문제해결 활동을 선호한다.",
+        "예술형(A): 자유롭고 창의적인 표현 활동을 선호한다.",
+        "사회형(S): 타인을 돕고 가르치는 활동을 선호한다.",
+        "진취형(E): 설득, 지도와 목표달성 활동을 선호한다.",
+        "관습형(C): 체계적인 자료처리와 규칙적인 활동을 선호한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=Q7nMOxAMcP4"
+    },
+    {
+      "id": "q041",
+      "number": 45,
+      "lecture": 4,
+      "sourceNumber": 55,
+      "category": "진로이론",
+      "prompt": "홀랜드 이론의 주요 개념 다섯 가지를 쓰고 설명하시오.",
+      "expectedCount": 5,
+      "answers": [
+        "일관성: 흥미유형들이 서로 유사하고 조화를 이루는 정도이다.",
+        "변별성: 특정 흥미유형이 다른 유형에 비해 뚜렷한 정도이다.",
+        "정체성: 자신의 목표, 흥미와 능력에 관한 인식이 분명하고 안정된 정도이다.",
+        "일치성: 개인의 유형과 환경의 유형이 맞는 정도이다.",
+        "계측성: 육각형에서 유형 사이의 거리가 관계의 정도를 나타낸다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=Q7nMOxAMcP4"
+    },
+    {
+      "lecture": 4,
+      "sourceNumber": 58,
+      "category": "직업심리검사",
+      "prompt": "크라이티스(Crites)의 직업성숙도 모형에서 태도 영역과 능력 영역의 하위요인을 각각 세 가지 쓰시오.",
+      "expectedCount": 6,
+      "answerGroups": [
+        {
+          "label": "태도 영역",
+          "requiredCount": 3,
+          "answers": [
+            "결정성",
+            "참여도",
+            "독립성",
+            "성향",
+            "타협성"
+          ]
+        },
+        {
+          "label": "능력 영역",
+          "requiredCount": 3,
+          "answers": [
+            "자기평가",
+            "직업정보",
+            "목표선택",
+            "계획",
+            "문제해결"
+          ]
+        }
+      ],
+      "answers": [
+        "결정성",
+        "참여도",
+        "독립성",
+        "성향",
+        "타협성",
+        "자기평가",
+        "직업정보",
+        "목표선택",
+        "계획",
+        "문제해결"
+      ],
+      "requirementLabel": "각 3가지",
+      "answerSelectionNote": "각 범주에서 3가지씩 선택하여 작성하세요.",
+      "sourceUrl": "https://www.youtube.com/watch?v=Q7nMOxAMcP4",
+      "number": 46,
+      "id": "q122",
+      "memoryTip": "태·능\n진로성숙도는 태도영역과 능력영역으로 나눠 기억하세요.\n이 문제는 각 영역에서 세 가지씩 써야 합니다. 하위요인은 모범답안에서 확인하세요."
+    },
+    {
+      "id": "q042",
+      "number": 47,
+      "lecture": 4,
+      "sourceNumber": 59,
+      "category": "심리검사",
+      "prompt": "규준의 유형 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "백분위: 규준집단에서 자신의 점수보다 낮은 점수를 얻은 사람의 비율을 나타낸다.",
+        "표준점수: 원점수를 평균과 표준편차를 기준으로 바꾼 점수이다.",
+        "표준등급: 점수분포를 일정한 등급으로 나누어 표현한 것이다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=Q7nMOxAMcP4"
+    },
+    {
+      "id": "q043",
+      "number": 48,
+      "lecture": 4,
+      "sourceNumber": 60,
+      "category": "심리검사",
+      "prompt": "준거타당도의 의미와 예측타당도·동시타당도를 설명하시오.",
+      "expectedCount": 0,
+      "answers": [
+        "준거타당도: 검사점수가 외적 준거와 얼마나 관련되는지를 나타낸다.",
+        "예측타당도: 검사점수와 미래의 수행 준거 사이의 관계이다.",
+        "동시타당도: 검사점수와 같은 시기에 측정한 준거 사이의 관계이다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=Q7nMOxAMcP4"
+    },
+    {
+      "id": "q044",
+      "number": 49,
+      "lecture": 5,
+      "sourceNumber": 61,
+      "category": "심리검사",
+      "prompt": "구성타당도를 확인하는 방법 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "수렴타당도: 같은 구성개념을 측정하는 다른 검사와 높은 관련성을 보이는지 확인한다.",
+        "변별타당도: 다른 구성개념을 측정하는 검사와 낮은 관련성을 보이는지 확인한다.",
+        "요인분석: 문항들이 어떤 공통 요인으로 묶이는지 분석한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=vwJrMliPJx0"
+    },
+    {
+      "lecture": 5,
+      "sourceNumber": 63,
+      "category": "직업심리검사",
+      "prompt": "심리검사를 사용할 때 지켜야 할 윤리적 사항을 세 가지 쓰시오.",
+      "expectedCount": 3,
+      "answers": [
+        "적절한 훈련과 교습을 받은 전문가가 검사를 실시한다.",
+        "수검자에게 검사의 목적과 본질을 설명한다.",
+        "수검자가 이해할 수 있는 용어로 검사 결과를 설명한다.",
+        "표준화된 절차에 따라 검사를 실시한다.",
+        "신뢰도와 타당도가 높은 검사를 사용한다.",
+        "검사가 개인에게 완벽하게 적용되지 않을 수 있고 시대에 뒤떨어질 수 있다는 한계를 고려하여 결과를 해석한다."
+      ],
+      "answerSelectionNote": "아래 6가지 예시 중 3가지를 작성하세요.",
+      "sourceUrl": "https://www.youtube.com/watch?v=vwJrMliPJx0",
+      "number": 50,
+      "id": "q123"
+    },
+    {
+      "id": "q045",
+      "number": 51,
+      "lecture": 5,
+      "sourceNumber": 64,
+      "category": "심리검사",
+      "prompt": "객관적 자기보고식 검사의 장점 다섯 가지를 쓰시오.",
+      "expectedCount": 5,
+      "answers": [
+        "검사 비용이 경제적이다.",
+        "시행, 채점과 해석이 간편하다.",
+        "여러 직무와 장면에 폭넓게 활용할 수 있다.",
+        "짧은 시간에 많은 정보를 얻을 수 있다.",
+        "여러 사람에게 집단으로 실시할 수 있다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=vwJrMliPJx0"
+    },
+    {
+      "id": "q046",
+      "number": 52,
+      "lecture": 5,
+      "sourceNumber": 66,
+      "category": "심리검사",
+      "prompt": "확률표집 방법 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "단순무선표집: 모집단 구성원에게 동일한 추출 기회를 부여한다.",
+        "층화표집: 모집단을 특성에 따라 층으로 구분하고 각 층에서 표집한다.",
+        "군집표집: 모집단을 집단으로 나누고 선택한 집단을 대상으로 조사한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=vwJrMliPJx0",
+      "memoryTip": "단·층·집\n단순무선표집 · 층화표집 · 집락표집(군집표집).\n“단층집”으로 세 가지 표집 방법을 떠올려 보세요."
+    },
+    {
+      "lecture": 5,
+      "sourceNumber": 67,
+      "category": "직업정보론",
+      "prompt": "제8차 한국표준직업분류 개정의 주요 특징을 네 가지 쓰시오.",
+      "expectedCount": 4,
+      "answers": [
+        "보건·의료 분야의 직업 변화를 반영한다.",
+        "저출산·고령화에 따른 사회복지·돌봄 인력 수요를 반영한다.",
+        "직업의 신생·확대·소멸 등 노동시장 구조 변화를 반영한다.",
+        "직업분류 체계를 개선한다.",
+        "직업분류 개정 수요를 반영한다."
+      ],
+      "answerSelectionNote": "아래 5가지 예시 중 4가지를 작성하세요.",
+      "sourceUrl": "https://www.youtube.com/watch?v=vwJrMliPJx0",
+      "number": 53,
+      "id": "q124"
+    },
+    {
+      "id": "q047",
+      "number": 54,
+      "lecture": 5,
+      "sourceNumber": 68,
+      "category": "직업정보",
+      "prompt": "직업으로 인정하기 위한 요건 네 가지를 쓰고 설명하시오.",
+      "expectedCount": 4,
+      "answers": [
+        "계속성: 유사한 직무를 계속 수행한다.",
+        "경제성: 경제적인 거래관계가 성립한다.",
+        "윤리성·사회성: 사회적으로 수용되는 활동이어야 한다.",
+        "비속박성: 속박된 상태에서 강제되는 활동은 직업활동으로 보지 않는다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=vwJrMliPJx0"
+    },
+    {
+      "id": "q048",
+      "number": 55,
+      "lecture": 5,
+      "sourceNumber": 69,
+      "category": "직업정보",
+      "prompt": "일의 계속성에 해당하는 경우 네 가지를 쓰시오.",
+      "expectedCount": 4,
+      "answers": [
+        "매일, 매주 또는 매월 주기적으로 행하는 일",
+        "계절적으로 행하는 일",
+        "명확한 주기는 없으나 계속적으로 행하는 일",
+        "현재 하는 일을 계속할 의지와 가능성이 있는 경우"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=vwJrMliPJx0"
+    },
+    {
+      "id": "q049",
+      "number": 56,
+      "lecture": 5,
+      "sourceNumber": 71,
+      "category": "직업정보",
+      "prompt": "속박된 상태의 활동으로 직업활동에서 제외되는 사례 두 가지를 쓰시오.",
+      "expectedCount": 2,
+      "answers": [
+        "법률에 의한 강제노동",
+        "사회복지시설 수용자가 시설 안에서 하는 경제활동"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=vwJrMliPJx0"
+    },
+    {
+      "id": "q050",
+      "number": 57,
+      "lecture": 5,
+      "sourceNumber": 72,
+      "category": "직업상담",
+      "prompt": "브레이필드의 직업정보 기능 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "정보제공: 직업선택에 필요한 정보를 제공한다.",
+        "재조정: 내담자의 잘못된 인식이나 선택을 현실에 맞게 수정하도록 돕는다.",
+        "동기화: 내담자가 직업선택과 행동에 참여하도록 동기를 높인다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=vwJrMliPJx0",
+      "memoryTip": "정·재·동\n정보제공 · 재조정 · 동기화.\n브레이필드의 직업정보 기능 세 가지입니다."
+    },
+    {
+      "id": "q051",
+      "number": 58,
+      "lecture": 5,
+      "sourceNumber": 73,
+      "category": "직업정보",
+      "prompt": "민간 직업정보와 공공 직업정보의 차이를 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "분류 기준: 민간은 생산자의 목적에 따라 자의적으로 분류할 수 있고, 공공은 객관적인 기준을 사용한다.",
+        "정보 범위: 민간은 특정 목적에 따라 제한된 정보를 제공하고, 공공은 포괄적인 정보를 제공한다.",
+        "이용 비용: 강의에서 민간은 주로 유료, 공공은 주로 무료라는 차이로 설명한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=vwJrMliPJx0"
+    },
+    {
+      "id": "q052",
+      "number": 59,
+      "lecture": 5,
+      "sourceNumber": 74,
+      "category": "직업정보",
+      "prompt": "작업강도를 결정하는 신체활동 네 가지를 쓰고 설명하시오.",
+      "expectedCount": 4,
+      "answers": [
+        "들어올림: 물체를 주어진 높이에서 다른 높이로 올리거나 내리는 작업이다.",
+        "운반: 물체를 한 장소에서 다른 장소로 옮기는 작업이다.",
+        "밂: 물체에 힘을 가하여 힘을 가한 방향으로 움직이는 작업이다.",
+        "당김: 물체에 힘을 가하여 힘을 가한 방향의 반대쪽으로 움직이는 작업이다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=vwJrMliPJx0"
+    },
+    {
+      "id": "q053",
+      "number": 60,
+      "lecture": 5,
+      "sourceNumber": 75,
+      "category": "직업정보",
+      "prompt": "한국직업사전의 작업환경에서 위험요인 다섯 가지를 쓰시오.",
+      "expectedCount": 5,
+      "answers": [
+        "전기적 위험",
+        "기계적 위험",
+        "화상 위험",
+        "폭발 위험",
+        "방사선 위험"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=vwJrMliPJx0"
+    },
+    {
+      "id": "q054",
+      "number": 61,
+      "lecture": 6,
+      "sourceNumber": 76,
+      "category": "직업정보",
+      "prompt": "한국직업사전의 정규교육·숙련기간·직무기능의 의미를 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "정규교육: 직무수행에 필요한 일반적인 교육 수준을 의미한다.",
+        "숙련기간: 직무를 평균적인 수준으로 수행하기 위해 필요한 훈련과 경험의 기간이다.",
+        "직무기능: 직무를 수행하면서 자료, 사람, 사물과 맺는 관계를 의미한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=_hL1na_AMq0"
+    },
+    {
+      "id": "q055",
+      "number": 62,
+      "lecture": 6,
+      "sourceNumber": 77,
+      "category": "직업정보",
+      "prompt": "포괄적인 업무의 직업분류 원칙 세 가지를 쓰시오.",
+      "expectedCount": 3,
+      "answers": [
+        "주된 직무 우선 원칙",
+        "최상급 직능수준 우선 원칙",
+        "생산업무 우선 원칙"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=_hL1na_AMq0"
+    },
+    {
+      "id": "q056",
+      "number": 63,
+      "lecture": 6,
+      "sourceNumber": 78,
+      "category": "직업정보",
+      "prompt": "다수 직업 종사자의 의미와 직업 결정 원칙 세 가지를 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "취업시간 우선: 서로 관련 없는 둘 이상의 직업에 종사하면 취업시간이 긴 직업을 우선한다.",
+        "수입 우선: 취업시간으로 정하기 어려우면 수입이 많은 직업을 우선한다.",
+        "조사 시 최근의 직업 우선: 앞의 기준으로 정하기 어려우면 조사 시 가장 최근의 직업을 우선한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=_hL1na_AMq0",
+      "answerIntro": "한 사람이 서로 관련 없는 둘 이상의 직업에 종사하는 경우이다."
+    },
+    {
+      "id": "q057",
+      "number": 64,
+      "lecture": 6,
+      "sourceNumber": 79,
+      "category": "직업정보",
+      "prompt": "산업·산업활동의 의미와 산업활동의 범위를 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "산업: 유사한 성질을 갖는 생산단위의 집합이다.",
+        "산업활동: 생산단위가 재화 또는 서비스를 생산하는 활동이다.",
+        "범위: 영리적·비영리적 활동을 모두 포함하되 가정 내 가사활동은 제외한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=_hL1na_AMq0"
+    },
+    {
+      "id": "q058",
+      "number": 65,
+      "lecture": 6,
+      "sourceNumber": 83,
+      "category": "직업정보",
+      "prompt": "목적에 따른 직업훈련의 유형 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "양성훈련: 직업수행에 필요한 기초 지식과 기술을 습득하도록 한다.",
+        "향상훈련: 기존 근로자의 지식과 기술 수준을 높인다.",
+        "전직훈련: 다른 직업으로 이동하기 위해 필요한 능력을 습득하도록 한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=_hL1na_AMq0",
+      "memoryTip": "양·전·향\n양성훈련 · 전직훈련 · 향상훈련.\n“양전향”으로 목적에 따른 훈련의 종류를 떠올려 보세요."
+    },
+    {
+      "id": "q059",
+      "number": 66,
+      "lecture": 6,
+      "sourceNumber": 84,
+      "category": "노동시장",
+      "prompt": "노동수요의 결정요인 다섯 가지를 쓰시오.",
+      "expectedCount": 5,
+      "answers": [
+        "임금",
+        "다른 생산요소의 가격",
+        "노동생산성",
+        "생산물에 대한 수요",
+        "생산기술"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=_hL1na_AMq0"
+    },
+    {
+      "id": "q060",
+      "number": 67,
+      "lecture": 6,
+      "sourceNumber": 89,
+      "category": "노동시장",
+      "prompt": "노동수요 탄력성의 결정요인 네 가지와 탄력성이 커지는 조건을 설명하시오.",
+      "expectedCount": 4,
+      "answers": [
+        "대체 가능성: 노동과 다른 생산요소 사이의 대체 가능성이 클수록 커진다.",
+        "다른 생산요소의 공급 탄력성: 다른 생산요소의 공급이 탄력적일수록 커진다.",
+        "생산물 수요 탄력성: 생산물에 대한 수요가 탄력적일수록 커진다.",
+        "총비용 중 인건비 비중: 인건비의 비중이 클수록 커진다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=_hL1na_AMq0",
+      "memoryTip": "대·다·수·총\n다른 생산요소로의 대체 가능성 · 다른 생산요소의 공급탄력성 · 생산물 수요의 가격탄력성 · 총비용에서 인건비가 차지하는 비중.\n노동수요의 탄력성에 영향을 주는 네 요인을 기억하세요."
+    },
+    {
+      "id": "q061",
+      "number": 68,
+      "lecture": 7,
+      "sourceNumber": 91,
+      "category": "노동시장",
+      "prompt": "여가의 대체효과·소득효과와 여가가 열등재일 때 노동공급의 변화를 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "대체효과: 임금이 상승하면 여가의 기회비용이 높아져 여가를 줄이고 노동시간을 늘린다.",
+        "소득효과: 여가가 정상재일 때 소득 증가는 여가 소비를 늘리고 노동시간을 줄이는 방향으로 작용한다.",
+        "여가가 열등재인 경우: 소득이 증가하면 여가 소비를 줄이고 노동공급을 늘리는 방향으로 작용한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=3YaBjQNBeNE"
+    },
+    {
+      "id": "q062",
+      "number": 69,
+      "lecture": 7,
+      "sourceNumber": 92,
+      "category": "노동시장",
+      "prompt": "내부노동시장의 형성요인 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "숙련의 특수성: 기업 내부에서만 유용한 고유 지식과 기술이 존재한다.",
+        "현장훈련: 기업 안에서 고유한 지식과 기술을 직접 전수한다.",
+        "관습: 선례에 의존한 기업의 비공식적인 규정과 문화가 형성된다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=3YaBjQNBeNE"
+    },
+    {
+      "id": "q063",
+      "number": 70,
+      "lecture": 7,
+      "sourceNumber": 93,
+      "category": "노동시장",
+      "prompt": "보상적 임금격차의 의미와 발생 원인 다섯 가지를 쓰시오.",
+      "expectedCount": 5,
+      "answers": [
+        "교육훈련 비용: 필요한 교육과 훈련의 비용 차이를 보상한다.",
+        "고용의 안정성: 불안정한 고용에 따른 위험을 보상한다.",
+        "작업의 쾌적성: 열악하거나 불쾌한 작업환경을 보상한다.",
+        "책임의 정도: 업무가 요구하는 책임의 크기를 보상한다.",
+        "성공과 실패의 가능성: 업무의 성공·실패에 따른 위험 차이를 보상한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=3YaBjQNBeNE",
+      "answerIntro": "작업환경 등 비금전적 조건의 차이를 경제적으로 보상하여 상쇄하는 임금의 차이이다."
+    },
+    {
+      "id": "q064",
+      "number": 71,
+      "lecture": 7,
+      "sourceNumber": 94,
+      "category": "노동시장",
+      "prompt": "기혼여성의 경제활동 참가를 높이는 요인 다섯 가지를 쓰시오.",
+      "expectedCount": 5,
+      "answers": [
+        "시장임금의 상승",
+        "남편이나 다른 가구원의 소득 감소",
+        "기혼여성의 교육 수준 상승",
+        "자녀 수의 감소와 자녀 연령의 상승",
+        "기혼여성에 대한 기업의 노동수요 증가"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=3YaBjQNBeNE"
+    },
+    {
+      "id": "q065",
+      "number": 72,
+      "lecture": 7,
+      "sourceNumber": 95,
+      "category": "노동시장",
+      "prompt": "비수요부족 실업의 유형 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "마찰적 실업: 구인자와 구직자의 정보 불일치 및 탐색 과정에서 발생한다.",
+        "구조적 실업: 기술혁신과 산업구조 변화로 노동수요와 노동공급의 특성이 맞지 않아 발생한다.",
+        "계절적 실업: 계절에 따른 노동수요 변화로 발생한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=3YaBjQNBeNE"
+    },
+    {
+      "id": "q066",
+      "number": 73,
+      "lecture": 7,
+      "sourceNumber": 96,
+      "category": "노동시장",
+      "prompt": "실망노동자 효과와 부가노동자 효과를 설명하시오.",
+      "expectedCount": 2,
+      "answers": [
+        "실망노동자 효과: 경기침체로 구직활동을 단념한 사람이 비경제활동인구로 이동하여 통계상 실업률을 낮추는 방향으로 작용한다.",
+        "부가노동자 효과: 경기침체로 가구의 주 소득자가 실직하면 다른 가구원이 구직활동을 시작하여 경제활동인구에 편입된다. 새 구직자가 실업자로 집계되면 실업률을 높이는 방향으로 작용한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=3YaBjQNBeNE"
+    },
+    {
+      "lecture": 7,
+      "sourceNumber": 98,
+      "category": "노동시장론",
+      "prompt": "최저임금제의 긍정적 효과를 여섯 가지 쓰시오.",
+      "expectedCount": 6,
+      "answers": [
+        "경기 활성화",
+        "산업구조의 고도화",
+        "노사분규 방지와 산업평화 유지",
+        "소득분배 개선",
+        "공정경쟁과 거래질서 확립",
+        "사용자의 근로자 확보",
+        "여성·고령자·청소년 등 취약 근로자 보호",
+        "복지국가 실현",
+        "근로의욕 증진",
+        "유효수요 증가"
+      ],
+      "answerSelectionNote": "아래 10가지 예시 중 6가지를 작성하세요.",
+      "sourceUrl": "https://www.youtube.com/watch?v=3YaBjQNBeNE",
+      "number": 74,
+      "id": "q125"
+    },
+    {
+      "id": "q067",
+      "number": 75,
+      "lecture": 7,
+      "sourceNumber": 99,
+      "category": "노동시장",
+      "prompt": "노사관계의 세 주체와 규제요인 세 가지를 각각 쓰시오.",
+      "expectedCount": 6,
+      "answers": [
+        "주체 · 노동자와 노동조합",
+        "주체 · 사용자와 사용자단체",
+        "주체 · 정부",
+        "규제요인 · 기술적 특성",
+        "규제요인 · 시장 또는 예산상의 제약",
+        "규제요인 · 세 주체의 세력관계"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=3YaBjQNBeNE"
+    },
+    {
+      "id": "q068",
+      "number": 76,
+      "lecture": 7,
+      "sourceNumber": 100,
+      "category": "노동시장",
+      "prompt": "노동조합의 숍 제도 네 가지를 쓰고 설명하시오.",
+      "expectedCount": 4,
+      "answers": [
+        "오픈숍: 조합원 여부와 관계없이 채용하며 가입은 자유이다.",
+        "클로즈드숍: 조합원만 채용하고 조합원 자격을 유지해야 한다.",
+        "유니온숍: 채용 시 가입 여부는 제한하지 않으나 채용 후 일정 기간 안에 가입한다.",
+        "에이전시숍: 가입 여부와 관계없이 단체교섭의 혜택을 받는 근로자에게 조합비에 상당하는 비용을 부담시킨다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=3YaBjQNBeNE"
+    },
+    {
+      "id": "q069",
+      "number": 77,
+      "lecture": 7,
+      "sourceNumber": 101,
+      "category": "노동시장",
+      "prompt": "경제적 조합주의의 특징 세 가지를 쓰시오.",
+      "expectedCount": 3,
+      "answers": [
+        "정치적 투쟁을 주된 목적으로 삼지 않는다.",
+        "노사 간 갈등과 대립보다 타협과 상생을 추구한다.",
+        "단체교섭을 통해 근로조건 개선과 임금인상 등 경제적 이익을 추구한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=3YaBjQNBeNE"
+    },
+    {
+      "id": "q070",
+      "number": 78,
+      "lecture": 7,
+      "sourceNumber": 102,
+      "category": "노동시장",
+      "prompt": "힉스의 단체교섭이론을 설명하시오.",
+      "expectedCount": 0,
+      "answers": [
+        "노동자의 요구임금: 파업기간이 길어질수록 낮아지는 방향으로 움직인다.",
+        "사용자의 제시임금: 파업기간이 길어질수록 높아지는 방향으로 움직인다.",
+        "타협임금: 두 곡선이 만나는 지점에서 타협임금이 결정되고 파업이 끝난다고 설명한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=3YaBjQNBeNE"
+    },
+    {
+      "id": "q071",
+      "number": 79,
+      "lecture": 7,
+      "sourceNumber": 103,
+      "category": "직업상담",
+      "prompt": "보딘의 정신역동적 직업상담 세 단계를 순서대로 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "탐색과 계약 체결: 내담자의 정신역동을 탐색하고 상담의 전략과 계약을 정한다.",
+        "중대한 결정: 자신의 성격에 맞춰 직업을 선택할지, 직업에 맞춰 성격을 변화시킬지 결정한다.",
+        "변화를 위한 노력: 선택한 방향에 대한 이해를 넓히고 지속적으로 변화를 위해 노력한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=3YaBjQNBeNE"
+    },
+    {
+      "id": "q072",
+      "number": 80,
+      "lecture": 7,
+      "sourceNumber": 105,
+      "category": "상담이론",
+      "prompt": "윌리엄슨의 특성요인 상담에서 인간 본성에 대한 가정 다섯 가지를 쓰시오.",
+      "expectedCount": 5,
+      "answers": [
+        "인간은 선과 악의 잠재력을 모두 지닌다.",
+        "선의 본질은 자아실현이다.",
+        "선을 실현하는 과정에서 타인의 도움이 필요하다.",
+        "선한 생활을 결정하는 것은 자기 자신이다.",
+        "누구나 독특한 세계관을 지닌다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=3YaBjQNBeNE"
+    },
+    {
+      "id": "q073",
+      "number": 81,
+      "lecture": 8,
+      "sourceNumber": 106,
+      "category": "직업상담",
+      "prompt": "윌리엄슨의 특성요인 상담에서 검사 해석 단계의 상담기법 세 가지를 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "설명: 검사자료를 내담자가 이해하도록 해석하여 진로결정을 돕는다.",
+        "설득: 합리적이고 논리적인 자료를 통해 적절한 선택을 하도록 돕는다.",
+        "직접충고: 검사결과를 바탕으로 상담자의 견해를 솔직하고 분명하게 전달한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=DawD9fWI9gE"
+    },
+    {
+      "id": "q074",
+      "number": 82,
+      "lecture": 8,
+      "sourceNumber": 107,
+      "category": "직업상담",
+      "prompt": "크라이티스의 직업문제 분류 세 차원을 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "적응성: 적응형과 부적응형으로 구분한다.",
+        "결정성: 다재다능하여 선택이 어려운 경우와 우유부단하여 선택이 어려운 경우를 구분한다.",
+        "현실성: 비현실형, 불충족형, 강압형으로 구분한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=DawD9fWI9gE"
+    },
+    {
+      "id": "q075",
+      "number": 83,
+      "lecture": 8,
+      "sourceNumber": 108,
+      "category": "직업상담",
+      "prompt": "자기보고식 가치 사정 기법 여섯 가지를 쓰시오.",
+      "expectedCount": 6,
+      "answers": [
+        "존경하는 인물 기술하기",
+        "백일몽 말하기",
+        "과거의 경험 회상하기",
+        "절정경험 살펴보기",
+        "자유시간에 하는 활동 살펴보기",
+        "가치 체크목록 작성하기"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=DawD9fWI9gE"
+    },
+    {
+      "id": "q076",
+      "number": 84,
+      "lecture": 8,
+      "sourceNumber": 109,
+      "category": "직업상담",
+      "prompt": "직업상담에서 사용하는 질적 측정도구 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "생애진로사정: 상담 초기의 구조화된 면담으로 내담자의 진로와 생활에 관한 질적 정보를 얻는다.",
+        "제노그램: 가족의 직업과 관계를 가계도로 표현하여 영향을 탐색한다.",
+        "직업카드 분류법: 직업카드를 분류하고 선택 이유를 탐색하여 흥미와 선호를 파악한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=DawD9fWI9gE"
+    },
+    {
+      "lecture": 8,
+      "sourceNumber": 110,
+      "category": "직업상담학",
+      "prompt": "실존주의 상담에서 인간 본성에 대한 기본 가정을 네 가지 쓰시오.",
+      "expectedCount": 4,
+      "answers": [
+        "인간은 자유로운 존재이다.",
+        "인간은 자신의 죽음을 인식하는 유한한 존재이다.",
+        "인간은 과거를 벗어나 자신을 초월할 수 있는 능력이 있다.",
+        "인간은 끊임없이 변화하는 존재이다.",
+        "인간은 완성을 향해 나아가는 존재이다."
+      ],
+      "answerSelectionNote": "아래 5가지 예시 중 4가지를 작성하세요.",
+      "sourceUrl": "https://www.youtube.com/watch?v=DawD9fWI9gE",
+      "number": 85,
+      "id": "q126"
+    },
+    {
+      "id": "q077",
+      "number": 86,
+      "lecture": 8,
+      "sourceNumber": 112,
+      "category": "직업상담",
+      "prompt": "리프탁이 제시한 직업탐색에 관한 비합리적 신념 다섯 가지를 쓰시오.",
+      "expectedCount": 5,
+      "answers": [
+        "직업탐색은 완전하게 이루어져야 한다는 신념",
+        "한 번 직업을 찾으면 다시 탐색할 필요가 없다는 신념",
+        "직업상담사가 자신에게 꼭 맞는 직업을 찾아 줄 것이라는 신념",
+        "면접 후 거절은 재앙이라는 신념",
+        "직업탐색 과정에 지나치게 몰두해야 한다는 신념"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=DawD9fWI9gE"
+    },
+    {
+      "id": "q078",
+      "number": 87,
+      "lecture": 8,
+      "sourceNumber": 113,
+      "category": "직업상담",
+      "prompt": "구조화 면접과 비구조화 면접의 의미 및 장단점을 비교하시오.",
+      "expectedCount": 0,
+      "answers": [
+        "구조화 면접: 질문 내용과 순서를 미리 정하여 진행한다. 짧은 시간에 많은 정보를 얻기 쉽지만 깊이 있는 탐색에는 제약이 있다.",
+        "비구조화 면접: 미리 정한 질문 없이 내담자의 반응에 따라 유연하게 진행한다. 심층 탐색이 가능하지만 짧은 시간에 다양한 정보를 얻기 어렵다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=DawD9fWI9gE"
+    },
+    {
+      "lecture": 8,
+      "sourceNumber": 114,
+      "category": "직업상담기법",
+      "prompt": "상담에 도움이 되는 언어적 행동과 비언어적 행동을 각각 세 가지 쓰시오.",
+      "expectedCount": 6,
+      "answerGroups": [
+        {
+          "label": "언어적 행동",
+          "requiredCount": 3,
+          "answers": [
+            "요약",
+            "반영",
+            "재진술",
+            "명료화"
+          ]
+        },
+        {
+          "label": "비언어적 행동",
+          "requiredCount": 3,
+          "answers": [
+            "은은한 미소",
+            "내담자 쪽으로 몸을 기울이기",
+            "눈 맞추기",
+            "적절한 거리 유지"
+          ]
+        }
+      ],
+      "answers": [
+        "요약",
+        "반영",
+        "재진술",
+        "명료화",
+        "은은한 미소",
+        "내담자 쪽으로 몸을 기울이기",
+        "눈 맞추기",
+        "적절한 거리 유지"
+      ],
+      "requirementLabel": "각 3가지",
+      "answerSelectionNote": "각 범주에서 3가지씩 선택하여 작성하세요.",
+      "sourceUrl": "https://www.youtube.com/watch?v=DawD9fWI9gE",
+      "number": 88,
+      "id": "q127"
+    },
+    {
+      "id": "q079",
+      "number": 89,
+      "lecture": 8,
+      "sourceNumber": 115,
+      "category": "직업상담",
+      "prompt": "탐색적 질문을 할 때 상담자가 유의할 점 세 가지를 쓰시오.",
+      "expectedCount": 3,
+      "answers": [
+        "너무 이른 조언으로 내담자의 탐색을 막지 않는다.",
+        "가르치려는 태도로 자유로운 탐색을 제한하지 않는다.",
+        "지나친 질문으로 내담자의 탐색을 방해하지 않는다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=DawD9fWI9gE"
+    },
+    {
+      "id": "q080",
+      "number": 90,
+      "lecture": 8,
+      "sourceNumber": 116,
+      "category": "심리검사",
+      "prompt": "직업적응이론에 기초한 검사도구 세 가지를 쓰시오.",
+      "expectedCount": 3,
+      "answers": [
+        "미네소타 중요도 질문지(MIQ)",
+        "미네소타 직무기술 질문지(MJDQ)",
+        "미네소타 만족도 질문지(MSQ)"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=DawD9fWI9gE"
+    },
+    {
+      "id": "q081",
+      "number": 91,
+      "lecture": 8,
+      "sourceNumber": 117,
+      "category": "진로이론",
+      "prompt": "직업적응이론의 여섯 가지 직업가치를 쓰고 설명하시오.",
+      "expectedCount": 6,
+      "answers": [
+        "지위: 사회적 인정과 명성을 얻는 것이다.",
+        "성취: 자신의 능력을 사용하여 목적을 이루는 것이다.",
+        "이타심: 타인과 조화를 이루며 돕는 것이다.",
+        "편안함: 스트레스가 적은 환경에서 일하는 것이다.",
+        "안정성: 예측 가능한 환경과 조건에서 일하는 것이다.",
+        "자율성: 독립적으로 결정하고 일하는 것이다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=DawD9fWI9gE"
+    },
+    {
+      "id": "q082",
+      "number": 92,
+      "lecture": 8,
+      "sourceNumber": 119,
+      "category": "진로이론",
+      "prompt": "고트프레드슨의 제한과 타협을 각각 설명하시오.",
+      "expectedCount": 2,
+      "answers": [
+        "제한: 자신의 자아개념과 사회적 공간에 따라 수용 가능한 직업의 범위를 좁혀 가는 과정이다.",
+        "타협: 현실적 제약 때문에 최선의 선택이 어려울 때 차선의 대안을 선택하는 과정이다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=DawD9fWI9gE"
+    },
+    {
+      "id": "q083",
+      "number": 93,
+      "lecture": 8,
+      "sourceNumber": 120,
+      "category": "심리검사",
+      "prompt": "신뢰도 추정방법 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "검사·재검사 신뢰도: 같은 검사를 같은 수검자에게 시간 간격을 두고 실시하여 점수의 일치 정도를 확인한다.",
+        "동형검사 신뢰도: 동등한 두 형태의 검사를 같은 수검자에게 실시하여 점수의 일치 정도를 확인한다.",
+        "반분신뢰도: 하나의 검사를 동등한 두 부분으로 나누어 두 부분 점수의 일치 정도를 확인한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=DawD9fWI9gE"
+    },
+    {
+      "id": "q084",
+      "number": 94,
+      "lecture": 9,
+      "sourceNumber": 121,
+      "category": "심리검사",
+      "prompt": "규준참조검사와 준거참조검사를 비교하시오.",
+      "expectedCount": 2,
+      "answers": [
+        "규준참조검사: 규준집단과 비교하여 개인의 상대적 위치를 해석한다.",
+        "준거참조검사: 미리 정한 기준에 비추어 개인의 성취나 수행 수준을 해석한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=mqMsylFztoo"
+    },
+    {
+      "id": "q085",
+      "number": 95,
+      "lecture": 9,
+      "sourceNumber": 122,
+      "category": "심리검사",
+      "prompt": "MBTI의 네 가지 선호지표를 쓰고 설명하시오.",
+      "expectedCount": 4,
+      "answers": [
+        "외향(E)·내향(I): 에너지의 방향이다.",
+        "감각(S)·직관(N): 정보를 인식하는 방식이다.",
+        "사고(T)·감정(F): 의사결정의 방식이다.",
+        "판단(J)·인식(P): 외부 생활에 대처하는 방식이다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=mqMsylFztoo"
+    },
+    {
+      "id": "q086",
+      "number": 96,
+      "lecture": 9,
+      "sourceNumber": 123,
+      "category": "심리검사",
+      "prompt": "GATB에서 지적 능력을 측정하는 적성 세 가지를 쓰시오.",
+      "expectedCount": 3,
+      "answers": [
+        "일반학습능력 또는 지능",
+        "언어능력",
+        "수리능력"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=mqMsylFztoo"
+    },
+    {
+      "id": "q087",
+      "number": 97,
+      "lecture": 9,
+      "sourceNumber": 124,
+      "category": "심리검사",
+      "prompt": "심리검사의 유형을 속도·역량, 개인·집단, 지필·수행으로 구분하여 설명하시오.",
+      "expectedCount": 0,
+      "answers": [
+        "속도검사·역량검사: 속도검사는 제한 시간 안의 수행 속도를, 역량검사는 문제를 해결할 수 있는 능력의 수준을 주로 측정한다.",
+        "개인검사·집단검사: 개인검사는 한 사람을 대상으로, 집단검사는 여러 사람을 동시에 대상으로 실시한다.",
+        "지필검사·수행검사: 지필검사는 글이나 문항에 응답하고, 수행검사는 실제 과제를 수행한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=mqMsylFztoo"
+    },
+    {
+      "id": "q088",
+      "number": 98,
+      "lecture": 9,
+      "sourceNumber": 126,
+      "category": "진로이론",
+      "prompt": "사회인지 진로이론의 모형 세 가지를 쓰시오.",
+      "expectedCount": 3,
+      "answers": [
+        "흥미모형",
+        "선택모형",
+        "수행모형"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=mqMsylFztoo",
+      "memoryTip": "흥·선·수\n흥미모형 · 선택모형 · 수행모형.\n사회인지 진로이론의 세 가지 모형은 “흥선수”로 기억하세요."
+    },
+    {
+      "id": "q089",
+      "number": 99,
+      "lecture": 9,
+      "sourceNumber": 127,
+      "category": "심리검사",
+      "prompt": "예비문항을 검토할 때 고려하는 사항 세 가지를 쓰시오.",
+      "expectedCount": 3,
+      "answers": [
+        "문항의 적절성",
+        "문항의 난이도",
+        "문항의 구조화"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=mqMsylFztoo"
+    },
+    {
+      "id": "q090",
+      "number": 100,
+      "lecture": 9,
+      "sourceNumber": 128,
+      "category": "심리검사",
+      "prompt": "집중경향치 세 가지의 의미를 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "평균: 모든 관측값을 고르게 대표하도록 산술적으로 정한 값이다.",
+        "중앙값: 자료를 크기순으로 정렬했을 때 가운데 위치하는 값이다.",
+        "최빈값: 가장 자주 나타나는 값이다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=mqMsylFztoo"
+    },
+    {
+      "id": "q091",
+      "number": 101,
+      "lecture": 9,
+      "sourceNumber": 129,
+      "category": "심리검사",
+      "prompt": "문항분석에서 사용하는 지표 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "난이도: 문항이 얼마나 쉽거나 어려운지를 나타낸다.",
+        "변별도: 능력 수준이 다른 사람들을 문항이 얼마나 잘 구별하는지를 나타낸다.",
+        "오답능률도: 오답 보기가 수검자의 반응을 얼마나 효과적으로 유도하는지를 나타낸다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=mqMsylFztoo"
+    },
+    {
+      "id": "q092",
+      "number": 102,
+      "lecture": 9,
+      "sourceNumber": 130,
+      "category": "심리검사",
+      "prompt": "반분검사에서 문항을 나누는 방법 네 가지를 쓰시오.",
+      "expectedCount": 4,
+      "answers": [
+        "전후반분법",
+        "기우반분법: 홀수·짝수 문항으로 나눈다.",
+        "짝진반분법: 비슷한 문항끼리 짝을 지어 나눈다.",
+        "난수반분법: 무작위로 나눈다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=mqMsylFztoo"
+    },
+    {
+      "id": "q093",
+      "number": 103,
+      "lecture": 9,
+      "sourceNumber": 131,
+      "category": "직업심리",
+      "prompt": "야호다의 박탈이론에서 고용이 제공하는 잠재적 효과 다섯 가지를 쓰시오.",
+      "expectedCount": 5,
+      "answers": [
+        "시간의 구조화",
+        "사회적 접촉",
+        "공동의 목표",
+        "사회적 정체성과 지위",
+        "활동성"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=mqMsylFztoo"
+    },
+    {
+      "lecture": 9,
+      "sourceNumber": 132,
+      "category": "직업정보론",
+      "prompt": "한국직업사전의 부가 직업정보 항목을 여섯 가지 쓰시오.",
+      "expectedCount": 6,
+      "answers": [
+        "작업장소",
+        "작업환경",
+        "작업강도",
+        "육체활동",
+        "정규교육",
+        "숙련기간",
+        "직무기능",
+        "조사연도"
+      ],
+      "answerSelectionNote": "아래 8가지 예시 중 6가지를 작성하세요.",
+      "sourceUrl": "https://www.youtube.com/watch?v=mqMsylFztoo",
+      "number": 104,
+      "id": "q128"
+    },
+    {
+      "id": "q094",
+      "number": 105,
+      "lecture": 9,
+      "sourceNumber": 133,
+      "category": "직업정보",
+      "prompt": "한국직업사전의 작업강도 다섯 단계를 쓰시오.",
+      "expectedCount": 5,
+      "answers": [
+        "아주 가벼운 작업",
+        "가벼운 작업",
+        "보통 작업",
+        "힘든 작업",
+        "아주 힘든 작업"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=mqMsylFztoo"
+    },
+    {
+      "id": "q095",
+      "number": 106,
+      "lecture": 9,
+      "sourceNumber": 134,
+      "category": "직업정보",
+      "prompt": "한국표준산업분류의 산업 결정방법 네 가지를 설명하시오.",
+      "expectedCount": 4,
+      "answers": [
+        "주된 산업활동: 생산단위의 주된 산업활동은 부가가치액에 따라 결정한다.",
+        "계절적 활동: 계절에 따라 정기적으로 산업활동을 달리하면 조사대상 기간의 산출액이 가장 많은 활동으로 분류한다.",
+        "휴업·청산·설립: 휴업 또는 청산 중이면 그 이전 활동으로, 새로 설립 중이면 개시하려는 활동으로 결정한다.",
+        "보조단위: 단일 사업체의 보조단위는 그 사업체에 포함하고, 여러 사업체를 관리하는 중앙 보조단위는 별도 사업체로 처리한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=mqMsylFztoo"
+    },
+    {
+      "lecture": 9,
+      "sourceNumber": 135,
+      "category": "직업정보론",
+      "prompt": "미시적 고용정보와 거시적 고용정보의 의미를 설명하고, 각각 두 가지 예를 쓰시오.",
+      "expectedCount": 4,
+      "answerGroups": [
+        {
+          "label": "미시적 고용정보",
+          "requiredCount": 2,
+          "answers": [
+            "구인·구직정보",
+            "직업훈련정보",
+            "임금정보"
+          ],
+          "intro": "개인이나 기업에 국한되는 고용정보이다."
+        },
+        {
+          "label": "거시적 고용정보",
+          "requiredCount": 2,
+          "answers": [
+            "고용동향",
+            "고용률",
+            "경제활동참가율"
+          ],
+          "intro": "국가·사회·경제 전체의 측면에서 보는 고용정보이다."
+        }
+      ],
+      "answers": [
+        "구인·구직정보",
+        "직업훈련정보",
+        "임금정보",
+        "고용동향",
+        "고용률",
+        "경제활동참가율"
+      ],
+      "requirementLabel": "각 2가지",
+      "answerSelectionNote": "각 범주에서 2가지씩 선택하여 작성하세요.",
+      "sourceUrl": "https://www.youtube.com/watch?v=mqMsylFztoo",
+      "number": 107,
+      "id": "q129"
+    },
+    {
+      "id": "q096",
+      "number": 108,
+      "lecture": 10,
+      "sourceNumber": 136,
+      "category": "직업상담",
+      "prompt": "직업정보 수집의 네 단계를 순서대로 쓰시오.",
+      "expectedCount": 4,
+      "answers": [
+        "직업분류 제시",
+        "대안 만들기",
+        "목록 줄이기",
+        "직업정보 수집"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=dL1sI5HP0AI"
+    },
+    {
+      "id": "q097",
+      "number": 109,
+      "lecture": 10,
+      "sourceNumber": 138,
+      "category": "노동시장",
+      "prompt": "일자리 특성별 임금격차가 발생하는 요인 다섯 가지를 쓰시오.",
+      "expectedCount": 5,
+      "answers": [
+        "인적자본량의 차이",
+        "개인의 생산성 차이",
+        "보상적 임금격차",
+        "시장의 단기적 불균형",
+        "기업의 효율임금 정책"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=dL1sI5HP0AI"
+    },
+    {
+      "id": "q098",
+      "number": 110,
+      "lecture": 10,
+      "sourceNumber": 139,
+      "category": "노동시장",
+      "prompt": "산업별 임금격차의 원인 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "보상적 임금격차: 작업환경이 열악한 산업은 이를 보상하기 위해 더 높은 임금을 지급할 수 있다.",
+        "노동조합의 존재: 강력한 노동조합이 존재하는 산업은 교섭을 통해 임금 수준이 높아질 수 있다.",
+        "노동생산성의 차이: 노동생산성이 높은 산업은 그렇지 않은 산업보다 높은 임금을 지급할 수 있다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=dL1sI5HP0AI"
+    },
+    {
+      "id": "q099",
+      "number": 111,
+      "lecture": 10,
+      "sourceNumber": 140,
+      "category": "직업상담",
+      "prompt": "직업대안 선택 단계에서 내담자가 달성할 과제 네 가지를 쓰시오.",
+      "expectedCount": 4,
+      "answers": [
+        "한 가지 선택을 하도록 준비하기",
+        "직업들을 평가하기",
+        "직업들 가운데 한 가지 선택하기",
+        "선택의 조건을 고려하기"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=dL1sI5HP0AI"
+    },
+    {
+      "lecture": 10,
+      "sourceNumber": 141,
+      "category": "직업심리검사",
+      "prompt": "심리검사에서 측정오차를 줄이는 방법을 세 가지 쓰시오.",
+      "expectedCount": 3,
+      "answers": [
+        "표준화된 검사 도구를 사용한다.",
+        "검사 실시와 측정 과정을 표준화한다.",
+        "균일한 검사 조건을 유지한다.",
+        "측정 목적에 적합한 문항 수를 충분히 확보한다.",
+        "문항의 반응 수를 적절하게 구성한다."
+      ],
+      "answerSelectionNote": "아래 5가지 예시 중 3가지를 작성하세요.",
+      "sourceUrl": "https://www.youtube.com/watch?v=dL1sI5HP0AI",
+      "number": 112,
+      "id": "q130"
+    },
+    {
+      "id": "q100",
+      "number": 113,
+      "lecture": 10,
+      "sourceNumber": 142,
+      "category": "직업심리",
+      "prompt": "직무 스트레스의 조절변인 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "성격유형: 경쟁적이고 성취지향적인 A형은 여유로운 B형보다 스트레스를 경험하기 쉽다.",
+        "통제의 위치: 외적 통제에 의존하기보다 내적 통제를 인식할 때 스트레스를 조절하기 쉽다.",
+        "사회적 지원: 타인의 지지와 지원이 스트레스를 완화하는 데 도움이 된다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=dL1sI5HP0AI"
+    },
+    {
+      "id": "q101",
+      "number": 114,
+      "lecture": 10,
+      "sourceNumber": 143,
+      "category": "진로이론",
+      "prompt": "홀의 경력발달 네 단계를 순서대로 설명하시오.",
+      "expectedCount": 4,
+      "answers": [
+        "탐색기: 자신의 정체성을 탐색하고 이해한다.",
+        "확립기: 동료와의 친밀한 관계와 상호작용을 통해 직업에 정착한다.",
+        "유지기: 생산성을 높이고 업무성과를 발휘한다.",
+        "쇠퇴기: 삶과 경력을 평가하고 통합한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=dL1sI5HP0AI",
+      "memoryTip": "탐정·확친·유생·쇠통\n탐색기—정체성 · 확립기—친밀관계 · 유지기—생산성 · 쇠퇴기—통합.\n각 경력단계와 그 단계의 과업을 짝지어 기억하세요."
+    },
+    {
+      "lecture": 10,
+      "sourceNumber": 144,
+      "category": "직업상담기법",
+      "prompt": "인지적 명확성이 부족한 내담자의 유형을 네 가지 쓰시오.",
+      "expectedCount": 4,
+      "answers": [
+        "단순 오정보",
+        "복잡한 오정보",
+        "구체성 결여",
+        "원인과 결과의 착각",
+        "자기인식 부족",
+        "비난하기"
+      ],
+      "answerSelectionNote": "아래 6가지 예시 중 4가지를 작성하세요.",
+      "sourceUrl": "https://www.youtube.com/watch?v=dL1sI5HP0AI",
+      "number": 115,
+      "id": "q131"
+    },
+    {
+      "id": "q102",
+      "number": 116,
+      "lecture": 10,
+      "sourceNumber": 145,
+      "category": "심리검사",
+      "prompt": "투사적 검사의 장점을 자기보고식 검사와 비교하여 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "반응의 다양성: 정해진 보기 안에서 고르는 자기보고식 검사에 비해 반응이 독특하고 풍부하다.",
+        "방어의 어려움: 질문의 의도를 파악하기 어려워 사회적으로 바람직하게 보이려는 반응을 통제하기 어렵다.",
+        "심리적 탐색: 자기보고에서 드러나지 않는 심리적 주제와 경험을 탐색하는 자료가 될 수 있다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=dL1sI5HP0AI"
+    },
+    {
+      "id": "q103",
+      "number": 117,
+      "lecture": 10,
+      "sourceNumber": 146,
+      "category": "심리검사",
+      "prompt": "준거장면에 따른 심리검사 유형 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "축소상황검사: 실제 상황에서 과제나 직무를 축소하여 수행을 관찰하고 평가한다.",
+        "모의장면검사: 실제 상황을 인위적으로 만들어 수행과 성과를 관찰한다.",
+        "경쟁장면검사: 실제와 같은 문제나 작업을 경쟁적으로 수행하게 하여 관찰하고 평가한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=dL1sI5HP0AI"
+    },
+    {
+      "id": "q104",
+      "number": 118,
+      "lecture": 10,
+      "sourceNumber": 147,
+      "category": "심리검사",
+      "prompt": "같은 명칭의 유사한 적성검사 A와 B에서 결과가 다르게 나타나는 원인 다섯 가지를 쓰시오.",
+      "expectedCount": 5,
+      "answers": [
+        "검사 내용이나 난이도의 차이",
+        "검사 시행시간과 학습효과의 차이",
+        "검사 수행환경의 차이",
+        "하위검사 구성의 차이",
+        "문항의 반응 수 차이"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=dL1sI5HP0AI"
+    },
+    {
+      "id": "q105",
+      "number": 119,
+      "lecture": 10,
+      "sourceNumber": 148,
+      "category": "직업상담",
+      "prompt": "수퍼가 제시한 평가 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "문제평가: 내담자의 직업문제와 상담에 대한 기대를 평가한다.",
+        "개인평가: 심리검사, 면담과 사례연구 등을 통해 개인의 특성을 평가한다.",
+        "예언평가: 문제평가와 개인평가를 바탕으로 어떤 직업에서 만족하고 성공할지 예측한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=dL1sI5HP0AI"
+    },
+    {
+      "id": "q106",
+      "number": 120,
+      "lecture": 10,
+      "sourceNumber": 150,
+      "category": "직업상담",
+      "prompt": "직업상담의 다섯 단계를 순서대로 쓰시오.",
+      "expectedCount": 5,
+      "answers": [
+        "관계형성",
+        "진단",
+        "목표설정",
+        "개입",
+        "평가"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=dL1sI5HP0AI",
+      "memoryTip": "관·진·목·개·평\n관계형성 → 진단 → 목표설정 → 개입 → 평가.\n직업상담의 다섯 단계 순서를 기억하세요."
+    },
+    {
+      "id": "q107",
+      "number": 121,
+      "lecture": 11,
+      "sourceNumber": 1,
+      "category": "진로이론",
+      "prompt": "하렌의 의사결정 유형 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "합리적 유형: 논리적이고 체계적으로 정보를 검토하여 결정한다.",
+        "직관적 유형: 즉각적인 느낌과 감정에 따라 결정한다.",
+        "의존적 유형: 결정의 책임을 타인에게 돌리며 외부의 판단에 의존한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=4tp8VEnYJ3E"
+    },
+    {
+      "id": "q108",
+      "number": 122,
+      "lecture": 11,
+      "sourceNumber": 3,
+      "category": "직업상담",
+      "prompt": "협업 관계의 집중도에 따른 여섯 단계를 약한 단계부터 순서대로 쓰시오.",
+      "expectedCount": 6,
+      "answers": [
+        "의사소통",
+        "협력",
+        "조정",
+        "협업",
+        "융합",
+        "통합"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=4tp8VEnYJ3E",
+      "memoryTip": "의협·조협·융통\n의사소통 → 협력 → 조정 → 협업 → 융합 → 통합.\n“의협, 조협, 융통”으로 여섯 단계의 순서를 떠올려 보세요."
+    },
+    {
+      "id": "q109",
+      "number": 123,
+      "lecture": 11,
+      "sourceNumber": 4,
+      "category": "직업상담",
+      "prompt": "직업상담 행정에 필요한 기술 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "사무처리 기술: 문서, 자료와 행정업무를 효율적으로 처리한다.",
+        "인간관계 기술: 타인과 원활하게 협력하고 화합한다.",
+        "구상적 기술: 상황과 전체 맥락을 파악하고 업무를 계획한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=4tp8VEnYJ3E",
+      "memoryTip": "사·인·구\n사무처리 기술 · 인간관계 기술 · 구상적 기술.\n관리자의 세 가지 기술을 첫 부분으로 기억하세요."
+    },
+    {
+      "lecture": 11,
+      "sourceNumber": 5,
+      "category": "직업상담기법",
+      "prompt": "초기면담 기록지에 포함할 내용을 다섯 가지 쓰시오.",
+      "expectedCount": 5,
+      "answers": [
+        "내담자 정보: 표정, 태도, 옷차림 등 관찰 내용",
+        "방문 경위와 상담기관을 알게 된 방법",
+        "가계도",
+        "주요 호소문제",
+        "상담자의 평가와 향후 계획",
+        "상담 일시와 장소"
+      ],
+      "answerSelectionNote": "아래 6가지 예시 중 5가지를 작성하세요.",
+      "sourceUrl": "https://www.youtube.com/watch?v=4tp8VEnYJ3E",
+      "number": 124,
+      "id": "q132"
+    },
+    {
+      "id": "q110",
+      "number": 125,
+      "lecture": 11,
+      "sourceNumber": 6,
+      "category": "진로이론",
+      "prompt": "진로자본의 핵심 역량 세 가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "진로성숙 역량: 자신의 진로에 대해 적절한 태도와 관점을 갖춘다.",
+        "전문지식 역량: 진로와 관련된 기술과 업무 지식을 갖춘다.",
+        "인적관계 역량: 인간관계와 사회적 연결망을 발전시키고 활용한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=4tp8VEnYJ3E",
+      "memoryTip": "성·관계·지식\n진로성숙 역량 · 인적관계 역량 · 전문지식 역량.\n강의에서는 성숙, 관계, 지식을 연결해 진로자본의 세 역량을 설명합니다."
+    },
+    {
+      "id": "q111",
+      "number": 126,
+      "lecture": 11,
+      "sourceNumber": 7,
+      "category": "직업상담",
+      "prompt": "취업활동 계획에 앞서 분석할 정보 세 가지를 쓰시오.",
+      "expectedCount": 3,
+      "answers": [
+        "개인에 대한 정보",
+        "직업에 대한 정보",
+        "미래에 대한 정보"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=4tp8VEnYJ3E"
+    },
+    {
+      "id": "q112",
+      "number": 127,
+      "lecture": 11,
+      "sourceNumber": 9,
+      "category": "직업상담",
+      "prompt": "직업상담 정보보안의 세 원칙을 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "기밀성: 허가되지 않은 사람에게 정보가 제공되지 않도록 한다.",
+        "무결성: 허가되지 않은 수정이나 변경으로부터 정보를 보호한다.",
+        "가용성: 허가된 사용자가 필요할 때 정보에 접근하고 사용할 수 있도록 한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=4tp8VEnYJ3E"
+    },
+    {
+      "id": "q113",
+      "number": 128,
+      "lecture": 11,
+      "sourceNumber": 10,
+      "category": "직업상담",
+      "prompt": "GROW 코칭모델의 네 요소를 쓰시오.",
+      "expectedCount": 4,
+      "answers": [
+        "목표(Goal)",
+        "현실(Reality)",
+        "대안(Options)",
+        "실행의지(Will)"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=4tp8VEnYJ3E",
+      "memoryTip": "GROW\nG 목표(Goal) → R 현실(Reality) → O 대안(Options) → W 실행의지(Will).\n“그로우”의 글자와 코칭의 네 단계를 연결하세요."
+    },
+    {
+      "lecture": 12,
+      "sourceNumber": 3,
+      "category": "직업정보론",
+      "prompt": "공공고용안정기관의 기능을 세 가지 쓰시오.",
+      "expectedCount": 3,
+      "answers": [
+        "직업상담",
+        "직업지도",
+        "고용보험 적용과 관련 사업 진행",
+        "국민취업지원제도 시행",
+        "고용정보의 수집·분석·가공·제공·축적·평가"
+      ],
+      "answerSelectionNote": "아래 5가지 예시 중 3가지를 작성하세요.",
+      "sourceUrl": "https://www.youtube.com/watch?v=uWlex6-6AnQ",
+      "number": 129,
+      "id": "q133"
+    },
+    {
+      "id": "q114",
+      "number": 130,
+      "lecture": 12,
+      "sourceNumber": 4,
+      "category": "진로이론",
+      "prompt": "홀랜드의 흥미코드가 SAE인 내담자의 유형과 일관성을 설명하시오.",
+      "expectedCount": 0,
+      "answers": [
+        "유형: 사회형(S), 예술형(A), 진취형(E)의 순서로 흥미가 나타난다.",
+        "일관성: 육각형에서 S는 A 및 E와 인접하므로 주된 유형과 다른 유형 사이의 일관성이 높다고 해석한다.",
+        "사회형의 특징: 타인을 돕는 일을 선호하고 인간관계 활동에 관심을 보인다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=uWlex6-6AnQ"
+    },
+    {
+      "lecture": 12,
+      "sourceNumber": 5,
+      "category": "직업상담기법",
+      "prompt": "상담에 도움이 되지 않는 언어적 행동과 비언어적 행동을 각각 세 가지 쓰시오.",
+      "expectedCount": 6,
+      "answerGroups": [
+        {
+          "label": "언어적 행동",
+          "requiredCount": 3,
+          "answers": [
+            "일방적인 충고",
+            "비난",
+            "타이름"
+          ]
+        },
+        {
+          "label": "비언어적 행동",
+          "requiredCount": 3,
+          "answers": [
+            "조소",
+            "팔짱 끼기",
+            "찡그리기",
+            "내담자를 멀리 바라보기",
+            "내담자에게서 떨어져 앉거나 돌아앉기"
+          ]
+        }
+      ],
+      "answers": [
+        "일방적인 충고",
+        "비난",
+        "타이름",
+        "조소",
+        "팔짱 끼기",
+        "찡그리기",
+        "내담자를 멀리 바라보기",
+        "내담자에게서 떨어져 앉거나 돌아앉기"
+      ],
+      "requirementLabel": "각 3가지",
+      "answerSelectionNote": "각 범주에서 3가지씩 선택하여 작성하세요.",
+      "sourceUrl": "https://www.youtube.com/watch?v=uWlex6-6AnQ",
+      "number": 131,
+      "id": "q134"
+    },
+    {
+      "lecture": 12,
+      "sourceNumber": 6,
+      "category": "직업상담기법",
+      "prompt": "가치 사정의 목적을 세 가지 쓰시오.",
+      "expectedCount": 3,
+      "answers": [
+        "자기인식 발전",
+        "역할갈등의 근거 확인",
+        "낮은 동기와 성취의 근거 확인",
+        "현재 상황에 대한 불만족의 근거 확인",
+        "흥미와 성격의 예비 사정",
+        "직업선택과 직업전환의 기틀 마련"
+      ],
+      "answerSelectionNote": "아래 6가지 예시 중 3가지를 작성하세요.",
+      "sourceUrl": "https://www.youtube.com/watch?v=uWlex6-6AnQ",
+      "number": 132,
+      "id": "q135"
+    },
+    {
+      "id": "q115",
+      "number": 133,
+      "lecture": 12,
+      "sourceNumber": 7,
+      "category": "직업상담",
+      "prompt": "즉시성의 의미와 유용하게 적용할 상황 다섯 가지를 설명하시오.",
+      "expectedCount": 5,
+      "answers": [
+        "방향감이 부족한 상황: 현재 상담관계에서 느끼는 것을 나누며 방향을 찾는다.",
+        "긴장감이 있는 상황: 지금 느껴지는 긴장을 직접 다룬다.",
+        "신뢰성에 의문이 제기된 상황: 상담관계의 신뢰 문제를 현재 대화에서 다룬다.",
+        "상담자와 내담자 사이의 사회적 거리가 큰 상황: 현재 관계를 탐색하여 거리를 줄인다.",
+        "의존성이 높은 상황: 현재 관계에서 나타나는 의존을 알아차리고 다룬다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=uWlex6-6AnQ",
+      "answerIntro": "상담자와 내담자가 지금 여기의 상담관계에서 경험하는 감정과 반응을 알아차리고 직접 다루는 기법이다."
+    },
+    {
+      "id": "q116",
+      "number": 134,
+      "lecture": 12,
+      "sourceNumber": 8,
+      "category": "노동시장",
+      "prompt": "사직·해고·전직의 의미를 각각 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "사직: 근로자가 자신의 의사로 직장을 그만두는 것이다.",
+        "해고: 사용자가 근로관계를 종료하는 것이다.",
+        "전직: 기존 직업을 떠나 다른 직업으로 전환하는 것이다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=uWlex6-6AnQ"
+    },
+    {
+      "id": "q117",
+      "number": 135,
+      "lecture": 12,
+      "sourceNumber": 10,
+      "category": "진로이론",
+      "prompt": "살로몬이 제시한 의사결정 시 우유부단의 원인 네 가지를 쓰시오.",
+      "expectedCount": 4,
+      "answers": [
+        "실패에 대한 공포",
+        "중요한 타인의 영향",
+        "완벽하려는 욕구",
+        "성급한 의사결정의 경험"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=uWlex6-6AnQ"
+    }
+  ],
+  "review": [
+    {
+      "id": "r001",
+      "lecture": 1,
+      "sourceNumber": 13,
+      "title": "게슈탈트 상담기법",
+      "reason": "기법 명칭과 답안 구분을 자막에서 확정하기 어려움",
+      "status": "보류"
+    },
+    {
+      "id": "r002",
+      "lecture": 1,
+      "sourceNumber": 14,
+      "title": "ABCDE 사례 적용",
+      "reason": "사례의 전체 조건과 단계별 답안 대조 필요",
+      "status": "보류"
+    },
+    {
+      "id": "r003",
+      "lecture": 2,
+      "sourceNumber": 16,
+      "title": "REBT의 기본 가정",
+      "reason": "요구 항목과 설명 항목의 경계 확인 필요",
+      "status": "보류"
+    },
+    {
+      "id": "r004",
+      "lecture": 2,
+      "sourceNumber": 19,
+      "title": "행동주의 상담기법",
+      "reason": "불안감소·학습촉진별 요구 개수와 설명 목록 대조 필요",
+      "status": "보류"
+    },
+    {
+      "id": "r005",
+      "lecture": 2,
+      "sourceNumber": 29,
+      "title": "긍정적 자기인식 원칙",
+      "reason": "5개 요구와 전체 원칙 목록의 개수 대조 필요",
+      "status": "보류"
+    },
+    {
+      "id": "r006",
+      "lecture": 2,
+      "sourceNumber": 30,
+      "title": "내담자 행동 수집 기법",
+      "reason": "7개 요구와 전체 설명 목록의 개수 대조 필요",
+      "status": "보류"
+    },
+    {
+      "id": "r007",
+      "lecture": 3,
+      "sourceNumber": 32,
+      "title": "집단상담의 장단점",
+      "reason": "장점·단점별 요구 개수와 답안 대조 필요",
+      "status": "보류"
+    },
+    {
+      "id": "r008",
+      "lecture": 3,
+      "sourceNumber": 37,
+      "title": "상담목표 설정 원칙",
+      "reason": "설명 항목의 구분과 명칭 확인 필요",
+      "status": "보류"
+    },
+    {
+      "id": "r009",
+      "lecture": 3,
+      "sourceNumber": 45,
+      "title": "직무 스트레스의 행동적 반응",
+      "reason": "요구 5개와 실제 반응 목록 대조 필요",
+      "status": "보류"
+    },
+    {
+      "id": "r010",
+      "lecture": 4,
+      "sourceNumber": 52,
+      "title": "산포도",
+      "reason": "사분편차 설명의 정확성 검토 필요",
+      "status": "보류"
+    },
+    {
+      "id": "r011",
+      "lecture": 4,
+      "sourceNumber": 56,
+      "title": "극대수행검사와 습관적 수행검사",
+      "reason": "3개·6개 요구가 함께 언급되어 실제 요구 개수 확인 필요",
+      "status": "보류"
+    },
+    {
+      "id": "r012",
+      "lecture": 4,
+      "sourceNumber": 57,
+      "title": "지능검사에서 얻는 정보",
+      "reason": "검사결과로 알 수 있는 정보의 표현 검토 필요",
+      "status": "보류"
+    },
+    {
+      "id": "r013",
+      "lecture": 5,
+      "sourceNumber": 65,
+      "title": "직업적응 양식",
+      "reason": "3개·4개 요구가 혼재하고 4개를 설명함",
+      "status": "보류"
+    },
+    {
+      "id": "r014",
+      "lecture": 5,
+      "sourceNumber": 70,
+      "title": "직업에서 제외하는 활동",
+      "reason": "6개 요구와 설명 목록의 개수 대조 필요",
+      "status": "보류"
+    },
+    {
+      "id": "r015",
+      "lecture": 6,
+      "sourceNumber": 80,
+      "title": "직업분류 대분류와 직능",
+      "reason": "표로 제시된 분류·수준의 정확한 대조가 필요함",
+      "status": "보류"
+    },
+    {
+      "id": "r016",
+      "lecture": 6,
+      "sourceNumber": 87,
+      "title": "부가급여",
+      "reason": "의미·종류·선호 이유의 요구 구분 및 표현 검토 필요",
+      "status": "보류"
+    },
+    {
+      "id": "r017",
+      "lecture": 6,
+      "sourceNumber": 90,
+      "title": "원문 90번에 해당하는 항목",
+      "reason": "자막은 89번 뒤에 종료되어 별도 90번 문항을 확인하지 못함",
+      "status": "보류"
+    },
+    {
+      "id": "r018",
+      "lecture": 7,
+      "sourceNumber": 104,
+      "title": "생애진로사정",
+      "reason": "구조·정보의 요구 항목과 설명의 중복 대조 필요",
+      "status": "보류"
+    },
+    {
+      "id": "r019",
+      "lecture": 8,
+      "sourceNumber": 111,
+      "title": "실존주의 주요 주제",
+      "reason": "3개·4개 요구가 함께 언급되어 실제 요구 개수 확인 필요",
+      "status": "보류"
+    },
+    {
+      "id": "r020",
+      "lecture": 8,
+      "sourceNumber": 118,
+      "title": "정규분포 변환방법",
+      "reason": "방법의 명칭과 설명 정확성 검토 필요",
+      "status": "보류"
+    },
+    {
+      "id": "r021",
+      "lecture": 9,
+      "sourceNumber": 125,
+      "title": "홀랜드 유형 간 관계",
+      "reason": "개인·환경 간 개념의 대응을 원문 자료와 대조해야 함",
+      "status": "보류"
+    },
+    {
+      "id": "r022",
+      "lecture": 10,
+      "sourceNumber": 137,
+      "title": "육아보조금과 노동공급",
+      "reason": "근로 여부에 따른 조건과 효과의 이론적 검토 필요",
+      "status": "보류"
+    },
+    {
+      "id": "r023",
+      "lecture": 10,
+      "sourceNumber": 149,
+      "title": "직무 유사성 기준",
+      "reason": "기능·스킬 등 핵심 용어의 구분을 확정하기 어려움",
+      "status": "보류"
+    },
+    {
+      "id": "r024",
+      "lecture": 11,
+      "sourceNumber": 2,
+      "title": "딩클라의 의사결정 유형",
+      "reason": "효과적인 유형 6개 요구에 비해 효과적인 유형은 2개로 설명함",
+      "status": "보류"
+    },
+    {
+      "id": "r025",
+      "lecture": 11,
+      "sourceNumber": 8,
+      "title": "직업정보 활용단계",
+      "reason": "단계 명칭과 순서의 자동자막 누락을 확인해야 함",
+      "status": "보류"
+    },
+    {
+      "id": "r026",
+      "lecture": 12,
+      "sourceNumber": 1,
+      "title": "직업대안 선택 과제",
+      "reason": "10강의 같은 주제와 단계 구분이 달라 대조 필요",
+      "status": "보류"
+    },
+    {
+      "id": "r027",
+      "lecture": 12,
+      "sourceNumber": 2,
+      "title": "MMPI 임상척도",
+      "reason": "6개 이상·10개 전체 등 요구 개수가 혼재함",
+      "status": "보류"
+    },
+    {
+      "id": "r028",
+      "lecture": 12,
+      "sourceNumber": 9,
+      "title": "경력 초기와 초기면담 종결",
+      "reason": "두 문제의 설명이 섞여 요구 항목 확인 필요",
+      "status": "보류"
+    }
+  ],
+  "excluded": [
+    {
+      "lecture": 5,
+      "sourceNumber": 62,
+      "title": "백분위·표준점수 계산",
+      "reason": "계산 문항 제외"
+    },
+    {
+      "lecture": 6,
+      "sourceNumber": 81,
+      "title": "입직률 계산",
+      "reason": "계산 문항 제외"
+    },
+    {
+      "lecture": 6,
+      "sourceNumber": 82,
+      "title": "구인배율 계산",
+      "reason": "계산 문항 제외"
+    },
+    {
+      "lecture": 6,
+      "sourceNumber": 85,
+      "title": "최적 고용량 계산",
+      "reason": "계산 문항 제외"
+    },
+    {
+      "lecture": 6,
+      "sourceNumber": 86,
+      "title": "제과점 이윤 계산",
+      "reason": "계산 문항 제외"
+    },
+    {
+      "lecture": 6,
+      "sourceNumber": 88,
+      "title": "적정 임금상승률 계산",
+      "reason": "계산 문항 제외"
+    },
+    {
+      "lecture": 7,
+      "sourceNumber": 97,
+      "title": "고용지표 계산 공식",
+      "reason": "계산 문항 제외"
+    }
+  ],
+  "lectures": [
+    {
+      "number": 1,
+      "title": "01강",
+      "subtitle": "빈출문제 1–15",
+      "count": 13
+    },
+    {
+      "number": 2,
+      "title": "02강",
+      "subtitle": "빈출문제 16–30",
+      "count": 11
+    },
+    {
+      "number": 3,
+      "title": "03강",
+      "subtitle": "빈출문제 31–45",
+      "count": 12
+    },
+    {
+      "number": 4,
+      "title": "04강",
+      "subtitle": "빈출문제 46–60",
+      "count": 12
+    },
+    {
+      "number": 5,
+      "title": "05강",
+      "subtitle": "빈출문제 61–75",
+      "count": 12
+    },
+    {
+      "number": 6,
+      "title": "06강",
+      "subtitle": "빈출문제 76–90",
+      "count": 7
+    },
+    {
+      "number": 7,
+      "title": "07강",
+      "subtitle": "빈출문제 91–105",
+      "count": 13
+    },
+    {
+      "number": 8,
+      "title": "08강",
+      "subtitle": "빈출문제 106–120",
+      "count": 13
+    },
+    {
+      "number": 9,
+      "title": "09강",
+      "subtitle": "빈출문제 121–135",
+      "count": 14
+    },
+    {
+      "number": 10,
+      "title": "10강",
+      "subtitle": "빈출문제 136–150",
+      "count": 13
+    },
+    {
+      "number": 11,
+      "title": "11강",
+      "subtitle": "새 영역",
+      "count": 8
+    },
+    {
+      "number": 12,
+      "title": "12강",
+      "subtitle": "기출 확장",
+      "count": 7
+    }
+  ]
+}

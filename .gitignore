@@ -1,0 +1,17 @@
+node_modules/
+work/
+.env
+.env.*
+.openai/
+.sites-runtime/
+*.zip
+/*강.md
+/*강.txt
+/(32)*
+/src/*
+!/src/cloud.js
+!/src/account-store.js
+!/src/account-store.test.mjs
+!/src/learning.test.mjs
+!/src/progress.test.mjs
+/scripts/icons.mjs
