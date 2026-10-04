@@ -27,9 +27,12 @@ function render() {
   const q = getQuestion(), list = currentQuestions(), index = list.findIndex(x=>x.id===q.id);
   const lec = data.lectures.find(x=>x.number===lecture);
   for (const b of $('lectures').children) b.setAttribute('aria-current', Number(b.dataset.lecture)===lecture ? 'true':'false');
-  setText('lectureLabel',reviewSession?`${reviewSession.scope==='all'?'전체 강의':String(reviewSession.scope).padStart(2,'0')+'강'} · 기억 정도별 복습`:lec.title);
+  setText('lectureLabel',reviewSession?`${reviewScopeLabel(reviewSession.scope,true)} · 복습`:lec.title);
   $('activeReview').hidden=!reviewSession;
-  if(reviewSession)setText('activeReviewDescription',`${reviewSession.statuses.map(s=>MEMORY_LABELS[s]).join(' · ')} / ${list.length}문항. 기억 정도를 바꿔도 이번 목록은 유지돼요.`);
+  if(reviewSession){
+    setText('activeReviewTitle',reviewSession.order==='random'?'랜덤 복습 중':'순서대로 복습 중');
+    setText('activeReviewDescription',`${reviewScopeLabel(reviewSession.scope)} · ${reviewSession.statuses.map(s=>MEMORY_LABELS[s]).join(' · ')} / ${list.length}문항. 이번 문제 목록과 순서는 끝까지 유지돼요.`);
+  }
   setText('sessionCurrent',index+1); setText('sessionTotal',`/ ${list.length}문항`);
   $('progressBar').style.width = `${(index+1)/list.length*100}%`;
   const select = $('questionSelect'); select.replaceChildren();
@@ -168,16 +171,33 @@ function persist(field,value){
     if(!activeUser)setText('saveStatus','내 답안과 기억 정도를 이 브라우저에 저장했어요.');return true;
   }catch{showStorageProblem();return false;}
 }
-function reviewChoices(){return {statuses:[...document.querySelectorAll('input[name="reviewStatus"]:checked')].map(input=>input.value),scope:$('reviewScope').value==='all'?'all':Number($('reviewScope').value)};}
+function reviewScopeLabel(scope,compact=false){
+  if(scope==='all')return '전체 강의';
+  const labels=scope.map(n=>String(n).padStart(2,'0'));
+  if(!labels.length)return '강의를 선택하세요';
+  if(compact&&labels.length>1)return `${labels[0]}강 외 ${labels.length-1}개`;
+  if(labels.length>4)return `${labels.slice(0,3).join('·')}강 외 ${labels.length-3}개`;
+  return `${labels.join('·')}강`;
+}
+function reviewChoices(){
+  const lectures=[...document.querySelectorAll('input[name="reviewLecture"]:checked')].map(input=>Number(input.value));
+  return {statuses:[...document.querySelectorAll('input[name="reviewStatus"]:checked')].map(input=>input.value),scope:lectures.length===data.lectures.length?'all':lectures,order:document.querySelector('input[name="reviewOrder"]:checked').value};
+}
 function updateReviewBuilder(){
-  const {statuses,scope}=reviewChoices();
+  const {statuses,scope,order}=reviewChoices();
+  setText('reviewScopeLabel',reviewScopeLabel(scope));
+  $('reviewAllLectures').checked=scope==='all';
+  $('reviewAllLectures').indeterminate=scope!=='all'&&scope.length>0;
   for(const [value,id] of [['known','filterKnownCount'],['uncertain','filterUncertainCount'],['unknown','filterUnknownCount'],['unrated','filterUnratedCount']])setText(id,`${matchingQuestions(data.questions,assessments,[value],scope).length}문항`);
   const count=matchingQuestions(data.questions,assessments,statuses,scope).length;
   $('startMemoryReview').disabled=!count;
-  setText('reviewSelectionCount',count?`${count}문항을 모아 복습할 수 있어요.`:!statuses.length?'복습할 기억 정도를 하나 이상 선택해 주세요.':'해당 문항이 아직 없어요. 먼저 기억 정도를 표시하거나, 미확인 문항을 선택해 주세요.');
+  setText('reviewSelectionCount',count?`${count}문항을 ${order==='random'?'랜덤으로':'순서대로'} 복습해요.`:scope!=='all'&&!scope.length?'복습할 강의를 하나 이상 선택해 주세요.':!statuses.length?'복습할 기억 정도를 하나 이상 선택해 주세요.':'해당 문항이 아직 없어요. 기억 정도를 표시하거나, 미확인 문항을 선택해 주세요.');
 }
-function startReview(statuses,scope='all'){
-  reviewSession=createReviewSession(data.questions,assessments,statuses,scope);
+function startReview(statuses,scope='all',order='sequential'){
+  reviewSession=createReviewSession(data.questions,assessments,statuses,scope,order);
+  for(const input of document.querySelectorAll('input[name="reviewLecture"]'))input.checked=reviewSession.scope==='all'||reviewSession.scope.includes(Number(input.value));
+  for(const input of document.querySelectorAll('input[name="reviewStatus"]'))input.checked=reviewSession.statuses.includes(input.value);
+  for(const input of document.querySelectorAll('input[name="reviewOrder"]'))input.checked=input.value===order;
   $('reviewSetup').close();selectQuestion(reviewSession.questionIds[0],true);
 }
 function endReview(){reviewSession=null;render();}
@@ -252,7 +272,8 @@ function init(){
   validIds=new Set(data.questions.map(q=>q.id));restoreProgress();restoreLearningContent();
   setText('totalCount',`${data.questions.length}문항`);setText('reviewCount',data.review.length);
   for(const l of data.lectures){const button=document.createElement('button');button.type='button';button.className='lecture-button';button.dataset.lecture=l.number;button.setAttribute('aria-label',`${l.title} ${l.subtitle}, ${l.count}문항`);
-    const left=document.createElement('span'),name=document.createElement('span'),desc=document.createElement('span'),count=document.createElement('span');name.className='lecture-name';name.textContent=l.title;desc.className='lecture-description';desc.textContent=l.subtitle;count.className='lecture-total';count.textContent=`${l.count}문항`;left.append(name,desc);button.append(left,count);button.onclick=()=>selectLecture(l.number);$('lectures').append(button);const option=document.createElement('option');option.value=l.number;option.textContent=`${l.title} · ${l.subtitle}`;$('reviewScope').append(option);}
+    const left=document.createElement('span'),name=document.createElement('span'),desc=document.createElement('span'),count=document.createElement('span');name.className='lecture-name';name.textContent=l.title;desc.className='lecture-description';desc.textContent=l.subtitle;count.className='lecture-total';count.textContent=`${l.count}문항`;left.append(name,desc);button.append(left,count);button.onclick=()=>selectLecture(l.number);$('lectures').append(button);
+    const choice=document.createElement('label'),input=document.createElement('input'),label=document.createElement('span');choice.className='lecture-choice';input.type='checkbox';input.name='reviewLecture';input.value=l.number;input.checked=true;label.textContent=l.title;choice.append(input,label);$('reviewLectureChoices').append(choice);}
   for(const r of data.review){const item=document.createElement('article'),meta=document.createElement('small'),title=document.createElement('strong'),reason=document.createElement('p');item.className='review-item';meta.textContent=`${String(r.lecture).padStart(2,'0')}강 · 보류 ${r.id.slice(1)}`;title.textContent=r.title;reason.textContent=r.reason;item.append(meta,title,reason);$('reviewList').append(item);}
   setText('exclusionNote',`계산·계산공식 문항 ${data.excluded.length}개는 제외했습니다. 타임스탬프는 사용하지 않으며, 학습 문항 번호는 새로 부여했습니다.`);
   $('reviewButton').onclick=()=>$('reviewDialog').showModal();$('closeReview').onclick=()=>$('reviewDialog').close();
@@ -260,11 +281,11 @@ function init(){
   $('draft').oninput=()=>writeAnswer($('draft').value);
   $('reveal').onclick=()=>revealAnswer();for(const value of MEMORY_VALUES)$(value).onclick=()=>assess(value);
   $('previous').onclick=()=>navigate(-1);$('next').onclick=()=>navigate(1);
-  $('reviewScope').onchange=updateReviewBuilder;
-  for(const input of document.querySelectorAll('input[name="reviewStatus"]'))input.onchange=updateReviewBuilder;
-  $('startMemoryReview').onclick=()=>{const {statuses,scope}=reviewChoices();startReview(statuses,scope);};
+  $('reviewAllLectures').onchange=()=>{for(const input of document.querySelectorAll('input[name="reviewLecture"]'))input.checked=$('reviewAllLectures').checked;updateReviewBuilder();};
+  for(const input of document.querySelectorAll('input[name="reviewStatus"],input[name="reviewLecture"],input[name="reviewOrder"]'))input.onchange=updateReviewBuilder;
+  $('startMemoryReview').onclick=()=>{const {statuses,scope,order}=reviewChoices();startReview(statuses,scope,order);};
   $('endMemoryReview').onclick=endReview;
-  $('openMemoryReview').onclick=()=>$('reviewSetup').showModal();
+  $('openMemoryReview').onclick=()=>{$('reviewLecturePicker').open=false;$('reviewSetup').showModal();};
   $('closeMemoryReview').onclick=()=>$('reviewSetup').close();
   $('editLearning').onclick=beginLearningEdit;
   $('editModelAnswer').oninput=captureLearningEdit;$('editMemoryTip').oninput=captureLearningEdit;
@@ -292,7 +313,7 @@ function init(){
   });
   currentId=data.questions[0].id;render();$('loading').hidden=true;$('practice').hidden=false;registerTools();setupAccount();setupInstall();
 }
-function state(){const q=getQuestion();return {questionId:q.id,lecture:q.lecture,number:q.number,prompt:q.prompt,answer:drafts.get(q.id)||'',modelAnswerVisible:revealed.has(q.id),assessment:assessments.get(q.id)||null,mode:reviewSession?'memoryReview':'lecture',reviewQuestionIds:reviewSession?.questionIds||null,browserStorageAvailable:storageReady&&$('storageNotice').hidden};}
+function state(){const q=getQuestion();return {questionId:q.id,lecture:q.lecture,number:q.number,prompt:q.prompt,answer:drafts.get(q.id)||'',modelAnswerVisible:revealed.has(q.id),assessment:assessments.get(q.id)||null,mode:reviewSession?'memoryReview':'lecture',reviewQuestionIds:reviewSession?.questionIds||null,reviewScope:reviewSession?.scope??null,reviewOrder:reviewSession?.order??null,browserStorageAvailable:storageReady&&$('storageNotice').hidden};}
 function registerTools(){
   const context=document.modelContext;if(!context?.registerTool)return;
   const lifecycle=new AbortController();window.addEventListener('pagehide',()=>lifecycle.abort(),{once:true});
@@ -305,7 +326,7 @@ function registerTools(){
     ['write_practice_answer','내 답안 작성','현재 문항의 답안을 기기에 저장하고 로그인 상태이면 계정과 동기화합니다.',schema({answer:{type:'string',maxLength:50000}},['answer']),false,input=>{validate(input,['answer'],['answer']);writeAnswer(input.answer);return state();}],
     ['reveal_practice_answer','모범답안 보기','현재 문항의 모범답안과 암기 팁을 화면에 표시합니다. 수정한 내용이 있으면 수정 내용을 반환합니다.',schema({}),false,input=>{validate(input,[]);revealAnswer(true);const q=getQuestion(),custom=overrides.get(q.id),content=custom||originalContent(q);return {...state(),modelAnswer:custom?[custom.answerText]:q.answers,modelAnswerText:content.answerText,memoryTip:content.tipText,isModified:!!custom,expectedCount:q.expectedCount,answerSelectionNote:q.answerSelectionNote||null,answerGroups:custom?null:q.answerGroups||null};}],
     ['assess_practice_answer','기억 정도 표시','모범답안 확인 후 기억 정도를 기기에 저장하고 로그인 상태이면 계정과 동기화합니다. 공식 채점은 하지 않습니다.',schema({assessment:{type:'string',enum:MEMORY_VALUES}},['assessment']),false,input=>{validate(input,['assessment'],['assessment']);assess(input.assessment);return state();}],
-    ['start_memory_review','기억 정도별 복습 시작','선택한 기억 정도의 문항으로 복습을 시작합니다. 복습 중 표시를 바꿔도 이번 목록은 유지됩니다.',schema({statuses:{type:'array',items:{type:'string',enum:Object.keys(MEMORY_LABELS)},minItems:1,uniqueItems:true},lecture:{type:'integer',minimum:1,maximum:12}},['statuses']),false,input=>{validate(input,['statuses','lecture'],['statuses']);if(!Array.isArray(input.statuses)||!input.statuses.length)throw new Error('기억 정도를 선택하세요.');startReview(input.statuses,input.lecture===undefined?'all':input.lecture);return state();}],
+    ['start_memory_review','기억 정도별 복습 시작','선택한 강의와 기억 정도의 문항으로 복습을 시작합니다. 여러 강의 및 랜덤 순서를 선택할 수 있고, 복습 중 표시를 바꿔도 목록과 순서는 유지됩니다.',schema({statuses:{type:'array',items:{type:'string',enum:Object.keys(MEMORY_LABELS)},minItems:1,uniqueItems:true},lecture:{type:'integer',minimum:1,maximum:12},lectures:{type:'array',items:{type:'integer',minimum:1,maximum:12},minItems:1,uniqueItems:true},order:{type:'string',enum:['sequential','random']}},['statuses']),false,input=>{validate(input,['statuses','lecture','lectures','order'],['statuses']);if(!Array.isArray(input.statuses)||!input.statuses.length)throw new Error('기억 정도를 선택하세요.');if(input.lecture!==undefined&&input.lectures!==undefined)throw new Error('강의 범위는 한 가지 방식으로 지정하세요.');if(input.lectures!==undefined&&(!Array.isArray(input.lectures)||!input.lectures.length))throw new Error('강의를 하나 이상 선택하세요.');startReview(input.statuses,input.lectures??input.lecture??'all',input.order??'sequential');return state();}],
     ['end_memory_review','일반 문제풀이로 돌아가기','복습을 마치고 현재 문항의 강의로 돌아갑니다.',schema({}),false,input=>{validate(input,[]);endReview();return state();}]
   ];
   for(const [name,title,description,inputSchema,readOnlyHint,execute] of definitions){try{Promise.resolve(context.registerTool({name,title,description,inputSchema,annotations:{readOnlyHint,untrustedContentHint:true},execute},{signal:lifecycle.signal})).catch(()=>{});}catch{}}

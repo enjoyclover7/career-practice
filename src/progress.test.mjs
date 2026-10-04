@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {STORAGE_KEY,loadProgress,saveProgress,matchingQuestions,createReviewSession} from '../dist/progress.js';
+import {STORAGE_KEY,loadProgress,saveProgress,matchingQuestions,createReviewSession,normalizeReviewScope} from '../dist/progress.js';
 const questions=JSON.parse(readFileSync(new URL('../dist/data.json',import.meta.url),'utf8')).questions;
 const ids=new Set(questions.map(q=>q.id));
 const ratings=new Map([['q001','known'],['q118','uncertain'],['q119','unknown']]);
@@ -15,6 +15,33 @@ const review=createReviewSession(questions,ratings,['uncertain','unknown']);
 ratings.set('q118','known');
 assert.deepEqual(review.questionIds,['q118','q119']);
 assert.deepEqual(createReviewSession(questions,ratings,['uncertain','unknown']).questionIds,['q119']);
+// Lecture OR selection and memory OR selection are intersected, without duplicates.
+const fixture=[
+  {id:'a',lecture:1},{id:'b',lecture:2},{id:'c',lecture:2},
+  {id:'d',lecture:3},{id:'e',lecture:4},{id:'f',lecture:3}
+];
+const memory=new Map([['a','unknown'],['b','known'],['c','uncertain'],['d','unknown'],['e','uncertain']]);
+assert.deepEqual(normalizeReviewScope([3,2,3]),[2,3]);
+assert.deepEqual(matchingQuestions(fixture,memory,['uncertain','unknown'],[3,2,3]).map(q=>q.id),['c','d']);
+assert.deepEqual(matchingQuestions(fixture,memory,['unrated'],[2,3]).map(q=>q.id),['f']);
+assert.equal(matchingQuestions(fixture,memory,['unknown'],[]).length,0);
+for(const scope of [[0],[13],['2'],[1.5],null,{}])assert.throws(()=>normalizeReviewScope(scope));
+assert.throws(()=>createReviewSession(fixture,memory,['unknown'],[]));
+assert.throws(()=>createReviewSession(fixture,memory,['unknown'],'all','invalid'));
+const allStatuses=['known','uncertain','unknown','unrated'];
+const sequential=createReviewSession(fixture,memory,allStatuses,[3,2]);
+assert.equal(sequential.order,'sequential');
+assert.deepEqual(sequential.questionIds,['b','c','d','f']);
+const randomReview=createReviewSession(fixture,memory,allStatuses,[2,3],'random',()=>0);
+assert.equal(randomReview.order,'random');
+assert.deepEqual(randomReview.questionIds,['c','d','f','b']);
+assert.deepEqual([...randomReview.questionIds].sort(),[...sequential.questionIds].sort());
+assert.equal(new Set(randomReview.questionIds).size,4);
+const snapshot=[...randomReview.questionIds];
+memory.set('c','known');memory.set('f','known');randomReview.assessedIds.add('c');
+assert.deepEqual(randomReview.questionIds,snapshot,'Rating changes must not rebuild or reshuffle an active session.');
+assert.deepEqual(createReviewSession(fixture,memory,['unknown'],1,'random').questionIds,['a']);
+assert.deepEqual(fixture.map(q=>q.id),['a','b','c','d','e','f'],'Shuffling must not modify the source question bank.');
 let saved=null;
 const storage={getItem:key=>{assert.equal(key,STORAGE_KEY);return saved;},setItem:(key,value)=>{assert.equal(key,STORAGE_KEY);saved=value;}};
 assert.equal(Object.keys(loadProgress(storage,ids).assessments).length,0);
@@ -38,4 +65,4 @@ assert.equal(saved,corrupt,'Unreadable records must not be overwritten.');
 assert.throws(()=>loadProgress({getItem(){throw new Error('blocked');}},ids));
 saved=null;
 assert.throws(()=>saveProgress({...storage,setItem(){throw new Error('quota exceeded');}},ids,'q001','assessments','known'));
-console.log('PASS: scoped multi-status reviews, fixed review queues, reload persistence, multi-tab merge, invalid data, blocked storage and quota failures.');
+console.log('PASS: multiple lecture and memory filters, sequential/random fixed queues, reload persistence, multi-tab merge, invalid data, blocked storage and quota failures.');

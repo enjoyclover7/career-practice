@@ -22,14 +22,29 @@ export function saveProgress(storage,validIds,id,field,value){
   const progress=loadProgress(storage,validIds);progress[field][id]=value;
   storage.setItem(STORAGE_KEY,JSON.stringify(progress));
 }
+export function normalizeReviewScope(scope){
+  if(scope==='all')return 'all';
+  const lectures=Number.isInteger(scope)?[scope]:scope;
+  if(!Array.isArray(lectures)||lectures.some(n=>!Number.isInteger(n)||n<1||n>12))throw new Error('강의 번호는 1~12입니다.');
+  return [...new Set(lectures)].sort((a,b)=>a-b);
+}
 export function matchingQuestions(questions,assessments,statuses,scope='all'){
   if(!Array.isArray(statuses)||statuses.some(s=>!Object.hasOwn(MEMORY_LABELS,s)))throw new Error('복습할 기억 정도가 올바르지 않습니다.');
-  if(scope!=='all'&&(!Number.isInteger(scope)||scope<1||scope>12))throw new Error('강의 번호는 1~12입니다.');
+  const lectures=normalizeReviewScope(scope);
   const selected=new Set(statuses);
-  return questions.filter(q=>(scope==='all'||q.lecture===scope)&&selected.has(assessments.get(q.id)||'unrated'));
+  return questions.filter(q=>(lectures==='all'||lectures.includes(q.lecture))&&selected.has(assessments.get(q.id)||'unrated'));
 }
-export function createReviewSession(questions,assessments,statuses,scope='all'){
+export function createReviewSession(questions,assessments,statuses,scope='all',order='sequential',random=Math.random){
+  if(!['sequential','random'].includes(order))throw new Error('풀이 순서는 순서대로 또는 랜덤을 선택하세요.');
   const selected=matchingQuestions(questions,assessments,statuses,scope);
   if(!selected.length)throw new Error('선택한 기억 정도에 해당하는 문항이 없습니다.');
-  return {questionIds:selected.map(q=>q.id),statuses:[...new Set(statuses)],scope,assessedIds:new Set()};
+  const questionIds=selected.map(q=>q.id);
+  if(order==='random'){
+    // Shuffle only at session creation; navigation and rating changes keep this queue.
+    for(let i=questionIds.length-1;i>0;i--){
+      const j=Math.floor(random()*(i+1));
+      [questionIds[i],questionIds[j]]=[questionIds[j],questionIds[i]];
+    }
+  }
+  return {questionIds,statuses:[...new Set(statuses)],scope:normalizeReviewScope(scope),order,assessedIds:new Set()};
 }
