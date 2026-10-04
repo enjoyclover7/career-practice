@@ -3,7 +3,8 @@ import {MEMORY_LABELS,MEMORY_VALUES,loadProgress,saveProgress,matchingQuestions,
 import {LEARNING_KEY,originalContent,loadLearning,saveLearning,restoreLearning,validateContent} from './learning.js';
 const $ = id => document.getElementById(id);
 let data, lecture = 1, currentId, reviewSession=null, storage=null, validIds, storageReady=false;
-const drafts = new Map(), revealed = new Set(), assessments = new Map();
+let draftText='';
+const revealed = new Set(), assessments = new Map();
 const overrides=new Map(), editBuffers=new Map();
 let learningStorage,profileStore=null,cloud=null,activeUser=null;
 const profileBuffers=new Map();
@@ -15,6 +16,7 @@ function selectQuestion(id, focus = false) {
   const q = data.questions.find(q => q.id === id);
   if (!q) throw new Error('유효한 문항 번호가 필요합니다.');
   if(reviewSession&&!reviewSession.questionIds.includes(id))reviewSession=null;
+  draftText='';revealed.clear();
   lecture = q.lecture; currentId = q.id; render();
   if (focus) { $('question').focus({preventScroll:true}); $('main').scrollIntoView({block:'start',behavior:'instant'}); }
 }
@@ -42,7 +44,7 @@ function render() {
   $('countBadge').hidden=!q.expectedCount;
   setText('countBadge', q.expectedCount ? (q.requirementLabel || (q.sourceNumber===99 ? '각 3가지' : `${q.expectedCount}개 항목`)) : '');
   setText('question',q.prompt);
-  $('draft').value=drafts.get(q.id)||''; updateCharacterCount();
+  $('draft').value=draftText; updateCharacterCount();
   const isRevealed=revealed.has(q.id);
   $('modelAnswer').hidden=!isRevealed; $('reveal').setAttribute('aria-expanded',String(isRevealed));
   setText('reveal',isRevealed?'모범답안 접기':'모범답안 보기');
@@ -140,7 +142,7 @@ function revealAnswer(show = !revealed.has(currentId)){
   if(show) revealed.add(currentId);else revealed.delete(currentId);
   $('modelAnswer').hidden=!show;$('reveal').setAttribute('aria-expanded',String(show));setText('reveal',show?'모범답안 접기':'모범답안 보기');updateAssessment();
 }
-function writeAnswer(text){if(typeof text!=='string'||text.length>50000)throw new Error('답안은 50,000자 이내의 문자열이어야 합니다.');drafts.set(currentId,text);$('draft').value=text;updateCharacterCount();persist('drafts',text);}
+function writeAnswer(text){if(typeof text!=='string'||text.length>50000)throw new Error('답안은 50,000자 이내의 문자열이어야 합니다.');draftText=text;$('draft').value=text;updateCharacterCount();}
 function assess(value){
   if(!MEMORY_VALUES.includes(value))throw new Error('known, uncertain 또는 unknown 값을 사용하세요.');
   if(!revealed.has(currentId))throw new Error('먼저 모범답안을 확인하세요.');
@@ -159,16 +161,15 @@ function restoreProgress(){
   try{
     storage=profileStore||window.localStorage;
     const saved=loadProgress(storage,validIds);
-    for(const [id,text] of Object.entries(saved.drafts))drafts.set(id,text);
     for(const [id,status] of Object.entries(saved.assessments))assessments.set(id,status);
-    storageReady=true;if(!activeUser)setText('saveStatus','로그인하면 휴대폰과 PC의 기록이 연결돼요. 지금은 이 브라우저에 저장돼요.');
+    storageReady=true;if(!activeUser)setText('saveStatus','기억 정도와 수정한 내용은 이 브라우저에 저장돼요. 로그인하면 기기 간에 공유돼요.');
   }catch{showStorageProblem();}
 }
 function persist(field,value){
   if(!storageReady)return false;
   try{
     saveProgress(storage,validIds,currentId,field,value);$('storageNotice').hidden=true;
-    if(!activeUser)setText('saveStatus','내 답안과 기억 정도를 이 브라우저에 저장했어요.');return true;
+    if(!activeUser)setText('saveStatus','기억 정도를 이 브라우저에 저장했어요.');return true;
   }catch{showStorageProblem();return false;}
 }
 function reviewScopeLabel(scope,compact=false){
@@ -203,10 +204,9 @@ function startReview(statuses,scope='all',order='sequential'){
 function endReview(){reviewSession=null;render();}
 
 function refreshAccountRecords(){
-  drafts.clear();assessments.clear();overrides.clear();
+  assessments.clear();overrides.clear();
   restoreProgress();restoreLearningContent();
   if(currentId){
-    if(document.activeElement!==$('draft')){$('draft').value=drafts.get(currentId)||'';updateCharacterCount();}
     updateAssessment();updateReviewBuilder();renderLearning();
   }
 }
@@ -214,13 +214,13 @@ function switchAccount(user,store){
   profileBuffers.set(profileId,new Map(editBuffers));
   profileId=user?.id||'guest';activeUser=user;profileStore=store;
   editBuffers.clear();for(const [id,buffer] of profileBuffers.get(profileId)||[])editBuffers.set(id,buffer);
-  revealed.clear();reviewSession=null;storageReady=false;
+  draftText='';revealed.clear();reviewSession=null;storageReady=false;
   $('accountButton').textContent=user?'내 계정':'로그인';
   $('signInForm').hidden=!!user;$('signedInPanel').hidden=!user;
   $('accountEmail').textContent=user?.email||'';
   $('accountTitle').textContent=user?'내 학습 계정':'로그인';
   $('accountMessage').textContent='';
-  if(user&&!store){drafts.clear();assessments.clear();overrides.clear();render();showStorageProblem();$('draft').disabled=true;$('editLearning').disabled=true;return;}
+  if(user&&!store){assessments.clear();overrides.clear();render();showStorageProblem();$('draft').disabled=true;$('editLearning').disabled=true;return;}
   $('draft').disabled=false;$('editLearning').disabled=false;
   refreshAccountRecords();render();
 }
@@ -304,16 +304,14 @@ function init(){
     }
     if(event.key!==STORAGE_KEY&&event.key!==null)return;
     try{
-      const saved=loadProgress(storage,validIds);drafts.clear();assessments.clear();
-      for(const [id,text] of Object.entries(saved.drafts))drafts.set(id,text);
+      const saved=loadProgress(storage,validIds);assessments.clear();
       for(const [id,status] of Object.entries(saved.assessments))assessments.set(id,status);
-      if(document.activeElement!==$('draft')){$('draft').value=drafts.get(currentId)||'';updateCharacterCount();}
       updateAssessment();updateReviewBuilder();
     }catch{showStorageProblem();}
   });
   currentId=data.questions[0].id;render();$('loading').hidden=true;$('practice').hidden=false;registerTools();setupAccount();setupInstall();
 }
-function state(){const q=getQuestion();return {questionId:q.id,lecture:q.lecture,number:q.number,prompt:q.prompt,answer:drafts.get(q.id)||'',modelAnswerVisible:revealed.has(q.id),assessment:assessments.get(q.id)||null,mode:reviewSession?'memoryReview':'lecture',reviewQuestionIds:reviewSession?.questionIds||null,reviewScope:reviewSession?.scope??null,reviewOrder:reviewSession?.order??null,browserStorageAvailable:storageReady&&$('storageNotice').hidden};}
+function state(){const q=getQuestion();return {questionId:q.id,lecture:q.lecture,number:q.number,prompt:q.prompt,answer:draftText,modelAnswerVisible:revealed.has(q.id),assessment:assessments.get(q.id)||null,mode:reviewSession?'memoryReview':'lecture',reviewQuestionIds:reviewSession?.questionIds||null,reviewScope:reviewSession?.scope??null,reviewOrder:reviewSession?.order??null,browserStorageAvailable:storageReady&&$('storageNotice').hidden};}
 function registerTools(){
   const context=document.modelContext;if(!context?.registerTool)return;
   const lifecycle=new AbortController();window.addEventListener('pagehide',()=>lifecycle.abort(),{once:true});
@@ -323,7 +321,7 @@ function registerTools(){
     ['read_practice_state','현재 문항 읽기','현재 화면의 문항, 내 답안과 확인 상태를 읽습니다.',schema({}),true,input=>{validate(input,[]);return state();}],
     ['list_practice_questions','문항 목록 읽기','풀 수 있는 문항의 번호와 문제를 강의별로 읽습니다. 보류 문항은 포함하지 않습니다.',schema({lecture:{type:'integer',minimum:1,maximum:12}}),true,input=>{validate(input,['lecture']);if(input.lecture!==undefined&&(!Number.isInteger(input.lecture)||input.lecture<1||input.lecture>12))throw new Error('강의 번호는 1~12입니다.');return data.questions.filter(q=>!input.lecture||q.lecture===input.lecture).map(({id,number,lecture,prompt})=>({id,number,lecture,prompt}));}],
     ['select_practice_question','문항 이동','지정한 문항을 화면에 엽니다. 복습 목록 밖의 문항이면 일반 문제풀이로 전환합니다.',schema({questionId:{type:'string'}},['questionId']),false,input=>{validate(input,['questionId'],['questionId']);selectQuestion(input.questionId);return state();}],
-    ['write_practice_answer','내 답안 작성','현재 문항의 답안을 기기에 저장하고 로그인 상태이면 계정과 동기화합니다.',schema({answer:{type:'string',maxLength:50000}},['answer']),false,input=>{validate(input,['answer'],['answer']);writeAnswer(input.answer);return state();}],
+    ['write_practice_answer','내 답안 작성','현재 문항에 연습 답안을 작성합니다. 문제를 이동하면 비워지며 브라우저와 계정에 저장하지 않습니다.',schema({answer:{type:'string',maxLength:50000}},['answer']),false,input=>{validate(input,['answer'],['answer']);writeAnswer(input.answer);return state();}],
     ['reveal_practice_answer','모범답안 보기','현재 문항의 모범답안과 암기 팁을 화면에 표시합니다. 수정한 내용이 있으면 수정 내용을 반환합니다.',schema({}),false,input=>{validate(input,[]);revealAnswer(true);const q=getQuestion(),custom=overrides.get(q.id),content=custom||originalContent(q);return {...state(),modelAnswer:custom?[custom.answerText]:q.answers,modelAnswerText:content.answerText,memoryTip:content.tipText,isModified:!!custom,expectedCount:q.expectedCount,answerSelectionNote:q.answerSelectionNote||null,answerGroups:custom?null:q.answerGroups||null};}],
     ['assess_practice_answer','기억 정도 표시','모범답안 확인 후 기억 정도를 기기에 저장하고 로그인 상태이면 계정과 동기화합니다. 공식 채점은 하지 않습니다.',schema({assessment:{type:'string',enum:MEMORY_VALUES}},['assessment']),false,input=>{validate(input,['assessment'],['assessment']);assess(input.assessment);return state();}],
     ['start_memory_review','기억 정도별 복습 시작','선택한 강의와 기억 정도의 문항으로 복습을 시작합니다. 여러 강의 및 랜덤 순서를 선택할 수 있고, 복습 중 표시를 바꿔도 목록과 순서는 유지됩니다.',schema({statuses:{type:'array',items:{type:'string',enum:Object.keys(MEMORY_LABELS)},minItems:1,uniqueItems:true},lecture:{type:'integer',minimum:1,maximum:12},lectures:{type:'array',items:{type:'integer',minimum:1,maximum:12},minItems:1,uniqueItems:true},order:{type:'string',enum:['sequential','random']}},['statuses']),false,input=>{validate(input,['statuses','lecture','lectures','order'],['statuses']);if(!Array.isArray(input.statuses)||!input.statuses.length)throw new Error('기억 정도를 선택하세요.');if(input.lecture!==undefined&&input.lectures!==undefined)throw new Error('강의 범위는 한 가지 방식으로 지정하세요.');if(input.lectures!==undefined&&(!Array.isArray(input.lectures)||!input.lectures.length))throw new Error('강의를 하나 이상 선택하세요.');startReview(input.statuses,input.lectures??input.lecture??'all',input.order??'sequential');return state();}],

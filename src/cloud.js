@@ -53,7 +53,7 @@ export async function connectCloud({ids,onAccount,onRecords,onStatus}){
     async signOut(){const {error}=await client.auth.signOut({scope:'local'});if(error)throw Error('로그아웃하지 못했어요. 연결을 확인하고 다시 시도해 주세요.');},
     sync,
     importGuest(){if(!active)throw Error('먼저 로그인해 주세요.');const count=active.importMissing(loadProgress(window.localStorage,ids),loadLearning(window.localStorage,ids));onRecords();return count;},
-    guestCount(){const p=loadProgress(window.localStorage,ids),l=loadLearning(window.localStorage,ids);return new Set([...Object.keys(p.drafts),...Object.keys(p.assessments),...Object.keys(l.overrides)]).size;},
+    guestCount(){const p=loadProgress(window.localStorage,ids),l=loadLearning(window.localStorage,ids);return new Set([...Object.keys(p.assessments),...Object.keys(l.overrides)]).size;},
     pendingCount(){return active?.pending().length||0;},
     get user(){return user;}
   };

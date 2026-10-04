@@ -15,7 +15,9 @@ saveLearning(a,ids,'q001',{answerText:'맞춤 답안',tipText:'암기'});restore
 assert.equal(a.pending().find(r=>r.kind==='learning').value,null,'Restoration is synchronized as a tombstone');
 assert.deepEqual(loadLearning(a,ids).overrides,{});assert.equal(loadProgress(a,ids).drafts.q001,'새 답안');
 const count=a.importMissing({drafts:{q001:'이전 기록',q002:'새 문항'},assessments:{q001:'unknown'}},{overrides:{q002:{answerText:'원래 메모',tipText:''}}});
-assert.equal(count,2);assert.equal(loadProgress(a,ids).drafts.q001,'새 답안','Import does not overwrite account records');
+assert.equal(count,1);assert.equal(loadProgress(a,ids).drafts.q001,'새 답안','Import does not overwrite account records');
+assert.equal(loadProgress(a,ids).drafts.q002,undefined,'Old practice drafts must not be imported into accounts.');
+assert.equal(loadLearning(a,ids).overrides.q002.answerText,'원래 메모','Answer edits must still be imported.');
 for(const row of a.pending())a.acknowledge(row);assert.equal(a.pending().length,0);
 const reloaded=new AccountStore(storage,'alice',ids);assert.equal(loadProgress(reloaded,ids).drafts.q001,'새 답안','Durable offline cache');
 const before=values.get(a.key);values.set(a.key,'broken');assert.throws(()=>new AccountStore(storage,'alice',ids));assert.equal(values.get(a.key),'broken','Corrupt cache must not be overwritten');values.set(a.key,before);

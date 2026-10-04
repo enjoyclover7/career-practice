@@ -56,7 +56,7 @@ export class AccountStore{
   }
   importMissing(progress,learning){
     const s=this.read();let count=0;
-    for(const [kind,values] of Object.entries({drafts:progress.drafts,assessments:progress.assessments,learning:learning.overrides}))for(const [id,value] of Object.entries(values)){
+    for(const [kind,values] of Object.entries({assessments:progress.assessments,learning:learning.overrides}))for(const [id,value] of Object.entries(values)){
       const k=`${id}:${kind}`,r={question_id:id,kind,value,mutation_id:crypto.randomUUID()};
       if(!s.records[k]&&validRecord(r,this.ids)){s.records[k]=r;s.pending[k]=r;count++;}
     }
