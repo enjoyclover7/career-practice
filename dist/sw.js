@@ -1,4 +1,4 @@
-const CACHE='career-practice-fc075ef8f804';
+const CACHE='career-practice-0c5492c5f03e';
 const SHELL=['./','./index.html','./app.js','./cloud.js','./progress.js','./learning.js','./styles.css','./data.json','./config.json','./favicon.svg','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png','./icons/maskable-512.png'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL))));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('career-practice-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));

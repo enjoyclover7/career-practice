@@ -5,6 +5,7 @@ import {createHash} from 'node:crypto';
 process.chdir(fileURLToPath(new URL('../',import.meta.url)));
 await build({absWorkingDir:fileURLToPath(new URL('../',import.meta.url)),entryPoints:['src/cloud.js'],bundle:true,format:'esm',platform:'browser',target:['es2022'],minify:true,outfile:'dist/cloud.js'});
 const hash=createHash('sha256');
-for(const name of (await readdir('dist')).sort())if(name!=='sw.js'&&name!=='icons')hash.update(await readFile(`dist/${name}`));
+async function assets(dir){const result=[];for(const item of await readdir(dir,{withFileTypes:true})){const path=`${dir}/${item.name}`;if(item.isDirectory())result.push(...await assets(path));else if(path!=='dist/sw.js')result.push(path);}return result;}
+for(const path of (await assets('dist')).sort())hash.update(await readFile(path));
 const worker=await readFile('dist/sw.js','utf8');
 await writeFile('dist/sw.js',worker.replace(/const CACHE='career-practice[^']*'/,`const CACHE='career-practice-${hash.digest('hex').slice(0,12)}'`));
