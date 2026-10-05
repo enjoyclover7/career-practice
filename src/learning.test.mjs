@@ -21,7 +21,7 @@ const grouped=data.questions.find(q=>q.answerGroups),groupedText=originalContent
 for(const g of grouped.answerGroups){assert.ok(groupedText.includes(`${g.label} · ${g.requiredCount}가지 선택`));for(const a of g.answers)assert.ok(groupedText.includes(a));}
 for(const q of data.questions){const content=originalContent(q);assert.ok(content.answerText.trim());assert.equal(content.tipText,q.memoryTip||'');}
 assert.equal(data.questions.filter(q=>q.memoryTip).length,21);
-assert.equal(data.questions.length,135);assert.equal(data.review.length,28);assert.equal(data.excluded.length,7);
+assert.equal(data.questions.length,137);assert.equal(data.review.length,27);assert.equal(data.excluded.length,7);
 assert.throws(()=>saveLearning(storage,ids,'missing',{answerText:'x',tipText:''}));
 assert.throws(()=>saveLearning(storage,ids,'q001',{answerText:'  ',tipText:''}));
 assert.throws(()=>saveLearning(storage,ids,'q001',{answerText:'x'.repeat(50001),tipText:''}));
@@ -34,3 +34,11 @@ values.delete(LEARNING_KEY);
 assert.throws(()=>saveLearning({...storage,setItem(){throw new Error('quota');}},ids,'q001',{answerText:'x',tipText:''}));
 assert.equal(values.get(LEARNING_KEY),undefined);
 console.log('PASS: answer and tip persistence, empty tips, per-question restore, unchanged drafts/ratings, grouped originals, validation and storage failures.');
+
+const gestalt=data.questions.find(q=>q.id==='q136'),rebt=data.questions.find(q=>q.id==='q137');
+assert.equal(gestalt.lecture,1);assert.equal(gestalt.sourceNumber,13);assert.equal(gestalt.expectedCount,3);assert.equal(gestalt.answers.length,3);
+assert.equal(rebt.lecture,1);assert.equal(rebt.sourceNumber,14);assert.equal(rebt.expectedCount,6);assert.equal(rebt.answers.length,6);
+assert.deepEqual(rebt.answers.map(a=>a[0]),['A','B','C','D','E','F']);
+assert.ok(!data.review.some(r=>r.lecture===1&&r.sourceNumber===13));
+assert.ok(data.review.some(r=>r.lecture===1&&r.sourceNumber===14&&r.variant));
+assert.equal(data.lectures[0].count,15);

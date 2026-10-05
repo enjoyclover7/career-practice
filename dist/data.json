@@ -196,8 +196,41 @@
       "sourceUrl": "https://www.youtube.com/watch?v=os9iZZdxmL0"
     },
     {
-      "id": "q012",
+      "id": "q136",
       "number": 13,
+      "lecture": 1,
+      "sourceNumber": 13,
+      "category": "직업상담",
+      "prompt": "게슈탈트 상담기법 3가지를 쓰고 설명하시오.",
+      "expectedCount": 3,
+      "answers": [
+        "욕구와 감정자각: 지금 여기에서 자신의 욕구와 감정을 알아차리도록 한다.",
+        "빈 의자 기법: 미해결과제의 사람이나 특정한 사람이 빈 의자에 앉아 있다고 상상하고, 그에게 하고 싶은 말과 감정, 행동을 표현하게 함으로써 내담자의 감정을 명료화하게 한다.",
+        "꿈작업: 꿈의 장면을 현실로 재현하도록 하여 꿈의 각 부분을 연기하며 꿈이 상징하는 내적 갈등과 감정을 통찰해 보도록 한다."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=os9iZZdxmL0"
+    },
+    {
+      "id": "q137",
+      "number": 14,
+      "lecture": 1,
+      "sourceNumber": 14,
+      "category": "직업상담",
+      "prompt": "인지적·정서적 상담(REBT)의 기본개념인 ABCDEF의 의미를 쓰시오.",
+      "expectedCount": 6,
+      "answers": [
+        "A — 선행사건: 내담자에게 정서적 혼란을 준 사건.",
+        "B — 비합리적인 신념: 선행사건에 대한 내담자의 비합리적 신념 체계.",
+        "C — 결과: 내담자가 보고하는 정서적·행동적 결과.",
+        "D — 논박: 비합리적 신념에 대한 논리적이고 합리적인 논박.",
+        "E — 효과: 논박을 통한 비합리적 신념이 합리적인 신념으로 대체된 효과.",
+        "F — 새로운 감정: 합리적 신념에서 비롯된 긍정적인 새로운 감정."
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=os9iZZdxmL0"
+    },
+    {
+      "id": "q012",
+      "number": 15,
       "lecture": 1,
       "sourceNumber": 15,
       "category": "상담이론",
@@ -225,13 +258,13 @@
       ],
       "answerSelectionNote": "아래 5가지 예시 중 4가지를 작성하세요.",
       "sourceUrl": "https://www.youtube.com/watch?v=vk-JtD-vTk8",
-      "number": 14,
+      "number": 16,
       "id": "q119",
       "memoryTip": "흑·과·개·선\n흑백논리 · 과잉일반화 · 개인화 · 선택적 추상화.\n“흑과개선”으로 네 가지 인지적 오류를 떠올려 보세요. 답안에 있는 자의적 해석도 선택할 수 있습니다."
     },
     {
       "id": "q013",
-      "number": 15,
+      "number": 17,
       "lecture": 2,
       "sourceNumber": 18,
       "category": "직업상담",
@@ -248,7 +281,7 @@
     },
     {
       "id": "q014",
-      "number": 16,
+      "number": 18,
       "lecture": 2,
       "sourceNumber": 20,
       "category": "상담이론",
@@ -303,12 +336,12 @@
       "requirementLabel": "각 3가지",
       "answerSelectionNote": "각 범주에서 3가지씩 선택하여 작성하세요.",
       "sourceUrl": "https://www.youtube.com/watch?v=vk-JtD-vTk8",
-      "number": 17,
+      "number": 19,
       "id": "q120"
     },
     {
       "id": "q015",
-      "number": 18,
+      "number": 20,
       "lecture": 2,
       "sourceNumber": 22,
       "category": "상담이론",
@@ -323,7 +356,7 @@
     },
     {
       "id": "q016",
-      "number": 19,
+      "number": 21,
       "lecture": 2,
       "sourceNumber": 23,
       "category": "상담이론",
@@ -338,7 +371,7 @@
     },
     {
       "id": "q017",
-      "number": 20,
+      "number": 22,
       "lecture": 2,
       "sourceNumber": 24,
       "category": "직업상담",
@@ -353,7 +386,7 @@
     },
     {
       "id": "q018",
-      "number": 21,
+      "number": 23,
       "lecture": 2,
       "sourceNumber": 25,
       "category": "직업상담",
@@ -369,7 +402,7 @@
     },
     {
       "id": "q019",
-      "number": 22,
+      "number": 24,
       "lecture": 2,
       "sourceNumber": 26,
       "category": "직업상담",
@@ -386,7 +419,7 @@
     },
     {
       "id": "q020",
-      "number": 23,
+      "number": 25,
       "lecture": 2,
       "sourceNumber": 27,
       "category": "직업상담",
@@ -401,7 +434,7 @@
     },
     {
       "id": "q021",
-      "number": 24,
+      "number": 26,
       "lecture": 2,
       "sourceNumber": 28,
       "category": "직업상담",
@@ -416,7 +449,7 @@
     },
     {
       "id": "q022",
-      "number": 25,
+      "number": 27,
       "lecture": 3,
       "sourceNumber": 31,
       "category": "직업상담",
@@ -432,7 +465,7 @@
     },
     {
       "id": "q023",
-      "number": 26,
+      "number": 28,
       "lecture": 3,
       "sourceNumber": 33,
       "category": "직업상담",
@@ -451,7 +484,7 @@
     },
     {
       "id": "q024",
-      "number": 27,
+      "number": 29,
       "lecture": 3,
       "sourceNumber": 34,
       "category": "직업상담",
@@ -466,7 +499,7 @@
     },
     {
       "id": "q025",
-      "number": 28,
+      "number": 30,
       "lecture": 3,
       "sourceNumber": 35,
       "category": "직업상담",
@@ -481,7 +514,7 @@
     },
     {
       "id": "q026",
-      "number": 29,
+      "number": 31,
       "lecture": 3,
       "sourceNumber": 36,
       "category": "직업상담",
@@ -496,7 +529,7 @@
     },
     {
       "id": "q027",
-      "number": 30,
+      "number": 32,
       "lecture": 3,
       "sourceNumber": 38,
       "category": "직업상담",
@@ -511,7 +544,7 @@
     },
     {
       "id": "q028",
-      "number": 31,
+      "number": 33,
       "lecture": 3,
       "sourceNumber": 39,
       "category": "진로이론",
@@ -526,7 +559,7 @@
     },
     {
       "id": "q029",
-      "number": 32,
+      "number": 34,
       "lecture": 3,
       "sourceNumber": 40,
       "category": "진로이론",
@@ -542,7 +575,7 @@
     },
     {
       "id": "q030",
-      "number": 33,
+      "number": 35,
       "lecture": 3,
       "sourceNumber": 41,
       "category": "진로이론",
@@ -559,7 +592,7 @@
     },
     {
       "id": "q031",
-      "number": 34,
+      "number": 36,
       "lecture": 3,
       "sourceNumber": 42,
       "category": "심리검사",
@@ -574,7 +607,7 @@
     },
     {
       "id": "q032",
-      "number": 35,
+      "number": 37,
       "lecture": 3,
       "sourceNumber": 43,
       "category": "상담이론",
@@ -594,7 +627,7 @@
     },
     {
       "id": "q033",
-      "number": 36,
+      "number": 38,
       "lecture": 3,
       "sourceNumber": 44,
       "category": "직업심리",
@@ -609,7 +642,7 @@
     },
     {
       "id": "q034",
-      "number": 37,
+      "number": 39,
       "lecture": 4,
       "sourceNumber": 46,
       "category": "심리검사",
@@ -624,7 +657,7 @@
     },
     {
       "id": "q035",
-      "number": 38,
+      "number": 40,
       "lecture": 4,
       "sourceNumber": 47,
       "category": "직업상담",
@@ -639,7 +672,7 @@
     },
     {
       "id": "q036",
-      "number": 39,
+      "number": 41,
       "lecture": 4,
       "sourceNumber": 48,
       "category": "심리검사",
@@ -655,7 +688,7 @@
     },
     {
       "id": "q037",
-      "number": 40,
+      "number": 42,
       "lecture": 4,
       "sourceNumber": 49,
       "category": "심리검사",
@@ -685,12 +718,12 @@
       ],
       "answerSelectionNote": "아래 5가지 예시 중 3가지를 작성하세요.",
       "sourceUrl": "https://www.youtube.com/watch?v=Q7nMOxAMcP4",
-      "number": 41,
+      "number": 43,
       "id": "q121"
     },
     {
       "id": "q038",
-      "number": 42,
+      "number": 44,
       "lecture": 4,
       "sourceNumber": 51,
       "category": "심리검사",
@@ -706,7 +739,7 @@
     },
     {
       "id": "q039",
-      "number": 43,
+      "number": 45,
       "lecture": 4,
       "sourceNumber": 53,
       "category": "진로이론",
@@ -722,7 +755,7 @@
     },
     {
       "id": "q040",
-      "number": 44,
+      "number": 46,
       "lecture": 4,
       "sourceNumber": 54,
       "category": "진로이론",
@@ -740,7 +773,7 @@
     },
     {
       "id": "q041",
-      "number": 45,
+      "number": 47,
       "lecture": 4,
       "sourceNumber": 55,
       "category": "진로이론",
@@ -800,13 +833,13 @@
       "requirementLabel": "각 3가지",
       "answerSelectionNote": "각 범주에서 3가지씩 선택하여 작성하세요.",
       "sourceUrl": "https://www.youtube.com/watch?v=Q7nMOxAMcP4",
-      "number": 46,
+      "number": 48,
       "id": "q122",
       "memoryTip": "태·능\n진로성숙도는 태도영역과 능력영역으로 나눠 기억하세요.\n이 문제는 각 영역에서 세 가지씩 써야 합니다. 하위요인은 모범답안에서 확인하세요."
     },
     {
       "id": "q042",
-      "number": 47,
+      "number": 49,
       "lecture": 4,
       "sourceNumber": 59,
       "category": "심리검사",
@@ -821,7 +854,7 @@
     },
     {
       "id": "q043",
-      "number": 48,
+      "number": 50,
       "lecture": 4,
       "sourceNumber": 60,
       "category": "심리검사",
@@ -836,7 +869,7 @@
     },
     {
       "id": "q044",
-      "number": 49,
+      "number": 51,
       "lecture": 5,
       "sourceNumber": 61,
       "category": "심리검사",
@@ -865,12 +898,12 @@
       ],
       "answerSelectionNote": "아래 6가지 예시 중 3가지를 작성하세요.",
       "sourceUrl": "https://www.youtube.com/watch?v=vwJrMliPJx0",
-      "number": 50,
+      "number": 52,
       "id": "q123"
     },
     {
       "id": "q045",
-      "number": 51,
+      "number": 53,
       "lecture": 5,
       "sourceNumber": 64,
       "category": "심리검사",
@@ -887,7 +920,7 @@
     },
     {
       "id": "q046",
-      "number": 52,
+      "number": 54,
       "lecture": 5,
       "sourceNumber": 66,
       "category": "심리검사",
@@ -916,12 +949,12 @@
       ],
       "answerSelectionNote": "아래 5가지 예시 중 4가지를 작성하세요.",
       "sourceUrl": "https://www.youtube.com/watch?v=vwJrMliPJx0",
-      "number": 53,
+      "number": 55,
       "id": "q124"
     },
     {
       "id": "q047",
-      "number": 54,
+      "number": 56,
       "lecture": 5,
       "sourceNumber": 68,
       "category": "직업정보",
@@ -937,7 +970,7 @@
     },
     {
       "id": "q048",
-      "number": 55,
+      "number": 57,
       "lecture": 5,
       "sourceNumber": 69,
       "category": "직업정보",
@@ -953,7 +986,7 @@
     },
     {
       "id": "q049",
-      "number": 56,
+      "number": 58,
       "lecture": 5,
       "sourceNumber": 71,
       "category": "직업정보",
@@ -967,7 +1000,7 @@
     },
     {
       "id": "q050",
-      "number": 57,
+      "number": 59,
       "lecture": 5,
       "sourceNumber": 72,
       "category": "직업상담",
@@ -983,7 +1016,7 @@
     },
     {
       "id": "q051",
-      "number": 58,
+      "number": 60,
       "lecture": 5,
       "sourceNumber": 73,
       "category": "직업정보",
@@ -998,7 +1031,7 @@
     },
     {
       "id": "q052",
-      "number": 59,
+      "number": 61,
       "lecture": 5,
       "sourceNumber": 74,
       "category": "직업정보",
@@ -1014,7 +1047,7 @@
     },
     {
       "id": "q053",
-      "number": 60,
+      "number": 62,
       "lecture": 5,
       "sourceNumber": 75,
       "category": "직업정보",
@@ -1031,7 +1064,7 @@
     },
     {
       "id": "q054",
-      "number": 61,
+      "number": 63,
       "lecture": 6,
       "sourceNumber": 76,
       "category": "직업정보",
@@ -1046,7 +1079,7 @@
     },
     {
       "id": "q055",
-      "number": 62,
+      "number": 64,
       "lecture": 6,
       "sourceNumber": 77,
       "category": "직업정보",
@@ -1061,7 +1094,7 @@
     },
     {
       "id": "q056",
-      "number": 63,
+      "number": 65,
       "lecture": 6,
       "sourceNumber": 78,
       "category": "직업정보",
@@ -1077,7 +1110,7 @@
     },
     {
       "id": "q057",
-      "number": 64,
+      "number": 66,
       "lecture": 6,
       "sourceNumber": 79,
       "category": "직업정보",
@@ -1092,7 +1125,7 @@
     },
     {
       "id": "q058",
-      "number": 65,
+      "number": 67,
       "lecture": 6,
       "sourceNumber": 83,
       "category": "직업정보",
@@ -1108,7 +1141,7 @@
     },
     {
       "id": "q059",
-      "number": 66,
+      "number": 68,
       "lecture": 6,
       "sourceNumber": 84,
       "category": "노동시장",
@@ -1125,7 +1158,7 @@
     },
     {
       "id": "q060",
-      "number": 67,
+      "number": 69,
       "lecture": 6,
       "sourceNumber": 89,
       "category": "노동시장",
@@ -1142,7 +1175,7 @@
     },
     {
       "id": "q061",
-      "number": 68,
+      "number": 70,
       "lecture": 7,
       "sourceNumber": 91,
       "category": "노동시장",
@@ -1157,7 +1190,7 @@
     },
     {
       "id": "q062",
-      "number": 69,
+      "number": 71,
       "lecture": 7,
       "sourceNumber": 92,
       "category": "노동시장",
@@ -1172,7 +1205,7 @@
     },
     {
       "id": "q063",
-      "number": 70,
+      "number": 72,
       "lecture": 7,
       "sourceNumber": 93,
       "category": "노동시장",
@@ -1190,7 +1223,7 @@
     },
     {
       "id": "q064",
-      "number": 71,
+      "number": 73,
       "lecture": 7,
       "sourceNumber": 94,
       "category": "노동시장",
@@ -1207,7 +1240,7 @@
     },
     {
       "id": "q065",
-      "number": 72,
+      "number": 74,
       "lecture": 7,
       "sourceNumber": 95,
       "category": "노동시장",
@@ -1222,7 +1255,7 @@
     },
     {
       "id": "q066",
-      "number": 73,
+      "number": 75,
       "lecture": 7,
       "sourceNumber": 96,
       "category": "노동시장",
@@ -1254,12 +1287,12 @@
       ],
       "answerSelectionNote": "아래 10가지 예시 중 6가지를 작성하세요.",
       "sourceUrl": "https://www.youtube.com/watch?v=3YaBjQNBeNE",
-      "number": 74,
+      "number": 76,
       "id": "q125"
     },
     {
       "id": "q067",
-      "number": 75,
+      "number": 77,
       "lecture": 7,
       "sourceNumber": 99,
       "category": "노동시장",
@@ -1277,7 +1310,7 @@
     },
     {
       "id": "q068",
-      "number": 76,
+      "number": 78,
       "lecture": 7,
       "sourceNumber": 100,
       "category": "노동시장",
@@ -1293,7 +1326,7 @@
     },
     {
       "id": "q069",
-      "number": 77,
+      "number": 79,
       "lecture": 7,
       "sourceNumber": 101,
       "category": "노동시장",
@@ -1308,7 +1341,7 @@
     },
     {
       "id": "q070",
-      "number": 78,
+      "number": 80,
       "lecture": 7,
       "sourceNumber": 102,
       "category": "노동시장",
@@ -1323,7 +1356,7 @@
     },
     {
       "id": "q071",
-      "number": 79,
+      "number": 81,
       "lecture": 7,
       "sourceNumber": 103,
       "category": "직업상담",
@@ -1338,7 +1371,7 @@
     },
     {
       "id": "q072",
-      "number": 80,
+      "number": 82,
       "lecture": 7,
       "sourceNumber": 105,
       "category": "상담이론",
@@ -1355,7 +1388,7 @@
     },
     {
       "id": "q073",
-      "number": 81,
+      "number": 83,
       "lecture": 8,
       "sourceNumber": 106,
       "category": "직업상담",
@@ -1370,7 +1403,7 @@
     },
     {
       "id": "q074",
-      "number": 82,
+      "number": 84,
       "lecture": 8,
       "sourceNumber": 107,
       "category": "직업상담",
@@ -1385,7 +1418,7 @@
     },
     {
       "id": "q075",
-      "number": 83,
+      "number": 85,
       "lecture": 8,
       "sourceNumber": 108,
       "category": "직업상담",
@@ -1403,7 +1436,7 @@
     },
     {
       "id": "q076",
-      "number": 84,
+      "number": 86,
       "lecture": 8,
       "sourceNumber": 109,
       "category": "직업상담",
@@ -1431,12 +1464,12 @@
       ],
       "answerSelectionNote": "아래 5가지 예시 중 4가지를 작성하세요.",
       "sourceUrl": "https://www.youtube.com/watch?v=DawD9fWI9gE",
-      "number": 85,
+      "number": 87,
       "id": "q126"
     },
     {
       "id": "q077",
-      "number": 86,
+      "number": 88,
       "lecture": 8,
       "sourceNumber": 112,
       "category": "직업상담",
@@ -1453,7 +1486,7 @@
     },
     {
       "id": "q078",
-      "number": 87,
+      "number": 89,
       "lecture": 8,
       "sourceNumber": 113,
       "category": "직업상담",
@@ -1506,12 +1539,12 @@
       "requirementLabel": "각 3가지",
       "answerSelectionNote": "각 범주에서 3가지씩 선택하여 작성하세요.",
       "sourceUrl": "https://www.youtube.com/watch?v=DawD9fWI9gE",
-      "number": 88,
+      "number": 90,
       "id": "q127"
     },
     {
       "id": "q079",
-      "number": 89,
+      "number": 91,
       "lecture": 8,
       "sourceNumber": 115,
       "category": "직업상담",
@@ -1526,7 +1559,7 @@
     },
     {
       "id": "q080",
-      "number": 90,
+      "number": 92,
       "lecture": 8,
       "sourceNumber": 116,
       "category": "심리검사",
@@ -1541,7 +1574,7 @@
     },
     {
       "id": "q081",
-      "number": 91,
+      "number": 93,
       "lecture": 8,
       "sourceNumber": 117,
       "category": "진로이론",
@@ -1559,7 +1592,7 @@
     },
     {
       "id": "q082",
-      "number": 92,
+      "number": 94,
       "lecture": 8,
       "sourceNumber": 119,
       "category": "진로이론",
@@ -1573,7 +1606,7 @@
     },
     {
       "id": "q083",
-      "number": 93,
+      "number": 95,
       "lecture": 8,
       "sourceNumber": 120,
       "category": "심리검사",
@@ -1588,7 +1621,7 @@
     },
     {
       "id": "q084",
-      "number": 94,
+      "number": 96,
       "lecture": 9,
       "sourceNumber": 121,
       "category": "심리검사",
@@ -1602,7 +1635,7 @@
     },
     {
       "id": "q085",
-      "number": 95,
+      "number": 97,
       "lecture": 9,
       "sourceNumber": 122,
       "category": "심리검사",
@@ -1618,7 +1651,7 @@
     },
     {
       "id": "q086",
-      "number": 96,
+      "number": 98,
       "lecture": 9,
       "sourceNumber": 123,
       "category": "심리검사",
@@ -1633,7 +1666,7 @@
     },
     {
       "id": "q087",
-      "number": 97,
+      "number": 99,
       "lecture": 9,
       "sourceNumber": 124,
       "category": "심리검사",
@@ -1648,7 +1681,7 @@
     },
     {
       "id": "q088",
-      "number": 98,
+      "number": 100,
       "lecture": 9,
       "sourceNumber": 126,
       "category": "진로이론",
@@ -1664,7 +1697,7 @@
     },
     {
       "id": "q089",
-      "number": 99,
+      "number": 101,
       "lecture": 9,
       "sourceNumber": 127,
       "category": "심리검사",
@@ -1679,7 +1712,7 @@
     },
     {
       "id": "q090",
-      "number": 100,
+      "number": 102,
       "lecture": 9,
       "sourceNumber": 128,
       "category": "심리검사",
@@ -1694,7 +1727,7 @@
     },
     {
       "id": "q091",
-      "number": 101,
+      "number": 103,
       "lecture": 9,
       "sourceNumber": 129,
       "category": "심리검사",
@@ -1709,7 +1742,7 @@
     },
     {
       "id": "q092",
-      "number": 102,
+      "number": 104,
       "lecture": 9,
       "sourceNumber": 130,
       "category": "심리검사",
@@ -1725,7 +1758,7 @@
     },
     {
       "id": "q093",
-      "number": 103,
+      "number": 105,
       "lecture": 9,
       "sourceNumber": 131,
       "category": "직업심리",
@@ -1758,12 +1791,12 @@
       ],
       "answerSelectionNote": "아래 8가지 예시 중 6가지를 작성하세요.",
       "sourceUrl": "https://www.youtube.com/watch?v=mqMsylFztoo",
-      "number": 104,
+      "number": 106,
       "id": "q128"
     },
     {
       "id": "q094",
-      "number": 105,
+      "number": 107,
       "lecture": 9,
       "sourceNumber": 133,
       "category": "직업정보",
@@ -1780,7 +1813,7 @@
     },
     {
       "id": "q095",
-      "number": 106,
+      "number": 108,
       "lecture": 9,
       "sourceNumber": 134,
       "category": "직업정보",
@@ -1833,12 +1866,12 @@
       "requirementLabel": "각 2가지",
       "answerSelectionNote": "각 범주에서 2가지씩 선택하여 작성하세요.",
       "sourceUrl": "https://www.youtube.com/watch?v=mqMsylFztoo",
-      "number": 107,
+      "number": 109,
       "id": "q129"
     },
     {
       "id": "q096",
-      "number": 108,
+      "number": 110,
       "lecture": 10,
       "sourceNumber": 136,
       "category": "직업상담",
@@ -1854,7 +1887,7 @@
     },
     {
       "id": "q097",
-      "number": 109,
+      "number": 111,
       "lecture": 10,
       "sourceNumber": 138,
       "category": "노동시장",
@@ -1871,7 +1904,7 @@
     },
     {
       "id": "q098",
-      "number": 110,
+      "number": 112,
       "lecture": 10,
       "sourceNumber": 139,
       "category": "노동시장",
@@ -1886,7 +1919,7 @@
     },
     {
       "id": "q099",
-      "number": 111,
+      "number": 113,
       "lecture": 10,
       "sourceNumber": 140,
       "category": "직업상담",
@@ -1915,12 +1948,12 @@
       ],
       "answerSelectionNote": "아래 5가지 예시 중 3가지를 작성하세요.",
       "sourceUrl": "https://www.youtube.com/watch?v=dL1sI5HP0AI",
-      "number": 112,
+      "number": 114,
       "id": "q130"
     },
     {
       "id": "q100",
-      "number": 113,
+      "number": 115,
       "lecture": 10,
       "sourceNumber": 142,
       "category": "직업심리",
@@ -1935,7 +1968,7 @@
     },
     {
       "id": "q101",
-      "number": 114,
+      "number": 116,
       "lecture": 10,
       "sourceNumber": 143,
       "category": "진로이론",
@@ -1966,12 +1999,12 @@
       ],
       "answerSelectionNote": "아래 6가지 예시 중 4가지를 작성하세요.",
       "sourceUrl": "https://www.youtube.com/watch?v=dL1sI5HP0AI",
-      "number": 115,
+      "number": 117,
       "id": "q131"
     },
     {
       "id": "q102",
-      "number": 116,
+      "number": 118,
       "lecture": 10,
       "sourceNumber": 145,
       "category": "심리검사",
@@ -1986,7 +2019,7 @@
     },
     {
       "id": "q103",
-      "number": 117,
+      "number": 119,
       "lecture": 10,
       "sourceNumber": 146,
       "category": "심리검사",
@@ -2001,7 +2034,7 @@
     },
     {
       "id": "q104",
-      "number": 118,
+      "number": 120,
       "lecture": 10,
       "sourceNumber": 147,
       "category": "심리검사",
@@ -2018,7 +2051,7 @@
     },
     {
       "id": "q105",
-      "number": 119,
+      "number": 121,
       "lecture": 10,
       "sourceNumber": 148,
       "category": "직업상담",
@@ -2033,7 +2066,7 @@
     },
     {
       "id": "q106",
-      "number": 120,
+      "number": 122,
       "lecture": 10,
       "sourceNumber": 150,
       "category": "직업상담",
@@ -2051,7 +2084,7 @@
     },
     {
       "id": "q107",
-      "number": 121,
+      "number": 123,
       "lecture": 11,
       "sourceNumber": 1,
       "category": "진로이론",
@@ -2066,7 +2099,7 @@
     },
     {
       "id": "q108",
-      "number": 122,
+      "number": 124,
       "lecture": 11,
       "sourceNumber": 3,
       "category": "직업상담",
@@ -2085,7 +2118,7 @@
     },
     {
       "id": "q109",
-      "number": 123,
+      "number": 125,
       "lecture": 11,
       "sourceNumber": 4,
       "category": "직업상담",
@@ -2115,12 +2148,12 @@
       ],
       "answerSelectionNote": "아래 6가지 예시 중 5가지를 작성하세요.",
       "sourceUrl": "https://www.youtube.com/watch?v=4tp8VEnYJ3E",
-      "number": 124,
+      "number": 126,
       "id": "q132"
     },
     {
       "id": "q110",
-      "number": 125,
+      "number": 127,
       "lecture": 11,
       "sourceNumber": 6,
       "category": "진로이론",
@@ -2136,7 +2169,7 @@
     },
     {
       "id": "q111",
-      "number": 126,
+      "number": 128,
       "lecture": 11,
       "sourceNumber": 7,
       "category": "직업상담",
@@ -2151,7 +2184,7 @@
     },
     {
       "id": "q112",
-      "number": 127,
+      "number": 129,
       "lecture": 11,
       "sourceNumber": 9,
       "category": "직업상담",
@@ -2166,7 +2199,7 @@
     },
     {
       "id": "q113",
-      "number": 128,
+      "number": 130,
       "lecture": 11,
       "sourceNumber": 10,
       "category": "직업상담",
@@ -2196,12 +2229,12 @@
       ],
       "answerSelectionNote": "아래 5가지 예시 중 3가지를 작성하세요.",
       "sourceUrl": "https://www.youtube.com/watch?v=uWlex6-6AnQ",
-      "number": 129,
+      "number": 131,
       "id": "q133"
     },
     {
       "id": "q114",
-      "number": 130,
+      "number": 132,
       "lecture": 12,
       "sourceNumber": 4,
       "category": "진로이론",
@@ -2255,7 +2288,7 @@
       "requirementLabel": "각 3가지",
       "answerSelectionNote": "각 범주에서 3가지씩 선택하여 작성하세요.",
       "sourceUrl": "https://www.youtube.com/watch?v=uWlex6-6AnQ",
-      "number": 131,
+      "number": 133,
       "id": "q134"
     },
     {
@@ -2274,12 +2307,12 @@
       ],
       "answerSelectionNote": "아래 6가지 예시 중 3가지를 작성하세요.",
       "sourceUrl": "https://www.youtube.com/watch?v=uWlex6-6AnQ",
-      "number": 132,
+      "number": 134,
       "id": "q135"
     },
     {
       "id": "q115",
-      "number": 133,
+      "number": 135,
       "lecture": 12,
       "sourceNumber": 7,
       "category": "직업상담",
@@ -2297,7 +2330,7 @@
     },
     {
       "id": "q116",
-      "number": 134,
+      "number": 136,
       "lecture": 12,
       "sourceNumber": 8,
       "category": "노동시장",
@@ -2312,7 +2345,7 @@
     },
     {
       "id": "q117",
-      "number": 135,
+      "number": 137,
       "lecture": 12,
       "sourceNumber": 10,
       "category": "진로이론",
@@ -2331,21 +2364,14 @@
     {
       "id": "r001",
       "lecture": 1,
-      "sourceNumber": 13,
-      "title": "게슈탈트 상담기법",
-      "reason": "기법 명칭과 답안 구분을 자막에서 확정하기 어려움",
-      "status": "보류"
+      "sourceNumber": 14,
+      "title": "ABCDE 사례 적용(변형 문제)",
+      "reason": "기본개념 ABCDEF 문항은 사진으로 확인하여 수록함. 사례 변형 문제는 제공 사진에서 답안 하단이 잘려 전체 단계의 대조가 필요함",
+      "status": "보류",
+      "variant": true
     },
     {
       "id": "r002",
-      "lecture": 1,
-      "sourceNumber": 14,
-      "title": "ABCDE 사례 적용",
-      "reason": "사례의 전체 조건과 단계별 답안 대조 필요",
-      "status": "보류"
-    },
-    {
-      "id": "r003",
       "lecture": 2,
       "sourceNumber": 16,
       "title": "REBT의 기본 가정",
@@ -2353,7 +2379,7 @@
       "status": "보류"
     },
     {
-      "id": "r004",
+      "id": "r003",
       "lecture": 2,
       "sourceNumber": 19,
       "title": "행동주의 상담기법",
@@ -2361,7 +2387,7 @@
       "status": "보류"
     },
     {
-      "id": "r005",
+      "id": "r004",
       "lecture": 2,
       "sourceNumber": 29,
       "title": "긍정적 자기인식 원칙",
@@ -2369,7 +2395,7 @@
       "status": "보류"
     },
     {
-      "id": "r006",
+      "id": "r005",
       "lecture": 2,
       "sourceNumber": 30,
       "title": "내담자 행동 수집 기법",
@@ -2377,7 +2403,7 @@
       "status": "보류"
     },
     {
-      "id": "r007",
+      "id": "r006",
       "lecture": 3,
       "sourceNumber": 32,
       "title": "집단상담의 장단점",
@@ -2385,7 +2411,7 @@
       "status": "보류"
     },
     {
-      "id": "r008",
+      "id": "r007",
       "lecture": 3,
       "sourceNumber": 37,
       "title": "상담목표 설정 원칙",
@@ -2393,7 +2419,7 @@
       "status": "보류"
     },
     {
-      "id": "r009",
+      "id": "r008",
       "lecture": 3,
       "sourceNumber": 45,
       "title": "직무 스트레스의 행동적 반응",
@@ -2401,7 +2427,7 @@
       "status": "보류"
     },
     {
-      "id": "r010",
+      "id": "r009",
       "lecture": 4,
       "sourceNumber": 52,
       "title": "산포도",
@@ -2409,7 +2435,7 @@
       "status": "보류"
     },
     {
-      "id": "r011",
+      "id": "r010",
       "lecture": 4,
       "sourceNumber": 56,
       "title": "극대수행검사와 습관적 수행검사",
@@ -2417,7 +2443,7 @@
       "status": "보류"
     },
     {
-      "id": "r012",
+      "id": "r011",
       "lecture": 4,
       "sourceNumber": 57,
       "title": "지능검사에서 얻는 정보",
@@ -2425,7 +2451,7 @@
       "status": "보류"
     },
     {
-      "id": "r013",
+      "id": "r012",
       "lecture": 5,
       "sourceNumber": 65,
       "title": "직업적응 양식",
@@ -2433,7 +2459,7 @@
       "status": "보류"
     },
     {
-      "id": "r014",
+      "id": "r013",
       "lecture": 5,
       "sourceNumber": 70,
       "title": "직업에서 제외하는 활동",
@@ -2441,7 +2467,7 @@
       "status": "보류"
     },
     {
-      "id": "r015",
+      "id": "r014",
       "lecture": 6,
       "sourceNumber": 80,
       "title": "직업분류 대분류와 직능",
@@ -2449,7 +2475,7 @@
       "status": "보류"
     },
     {
-      "id": "r016",
+      "id": "r015",
       "lecture": 6,
       "sourceNumber": 87,
       "title": "부가급여",
@@ -2457,7 +2483,7 @@
       "status": "보류"
     },
     {
-      "id": "r017",
+      "id": "r016",
       "lecture": 6,
       "sourceNumber": 90,
       "title": "원문 90번에 해당하는 항목",
@@ -2465,7 +2491,7 @@
       "status": "보류"
     },
     {
-      "id": "r018",
+      "id": "r017",
       "lecture": 7,
       "sourceNumber": 104,
       "title": "생애진로사정",
@@ -2473,7 +2499,7 @@
       "status": "보류"
     },
     {
-      "id": "r019",
+      "id": "r018",
       "lecture": 8,
       "sourceNumber": 111,
       "title": "실존주의 주요 주제",
@@ -2481,7 +2507,7 @@
       "status": "보류"
     },
     {
-      "id": "r020",
+      "id": "r019",
       "lecture": 8,
       "sourceNumber": 118,
       "title": "정규분포 변환방법",
@@ -2489,7 +2515,7 @@
       "status": "보류"
     },
     {
-      "id": "r021",
+      "id": "r020",
       "lecture": 9,
       "sourceNumber": 125,
       "title": "홀랜드 유형 간 관계",
@@ -2497,7 +2523,7 @@
       "status": "보류"
     },
     {
-      "id": "r022",
+      "id": "r021",
       "lecture": 10,
       "sourceNumber": 137,
       "title": "육아보조금과 노동공급",
@@ -2505,7 +2531,7 @@
       "status": "보류"
     },
     {
-      "id": "r023",
+      "id": "r022",
       "lecture": 10,
       "sourceNumber": 149,
       "title": "직무 유사성 기준",
@@ -2513,7 +2539,7 @@
       "status": "보류"
     },
     {
-      "id": "r024",
+      "id": "r023",
       "lecture": 11,
       "sourceNumber": 2,
       "title": "딩클라의 의사결정 유형",
@@ -2521,7 +2547,7 @@
       "status": "보류"
     },
     {
-      "id": "r025",
+      "id": "r024",
       "lecture": 11,
       "sourceNumber": 8,
       "title": "직업정보 활용단계",
@@ -2529,7 +2555,7 @@
       "status": "보류"
     },
     {
-      "id": "r026",
+      "id": "r025",
       "lecture": 12,
       "sourceNumber": 1,
       "title": "직업대안 선택 과제",
@@ -2537,7 +2563,7 @@
       "status": "보류"
     },
     {
-      "id": "r027",
+      "id": "r026",
       "lecture": 12,
       "sourceNumber": 2,
       "title": "MMPI 임상척도",
@@ -2545,7 +2571,7 @@
       "status": "보류"
     },
     {
-      "id": "r028",
+      "id": "r027",
       "lecture": 12,
       "sourceNumber": 9,
       "title": "경력 초기와 초기면담 종결",
@@ -2602,7 +2628,7 @@
       "number": 1,
       "title": "01강",
       "subtitle": "빈출문제 1–15",
-      "count": 13
+      "count": 15
     },
     {
       "number": 2,
